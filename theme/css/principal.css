@@ -1,0 +1,324 @@
+/* Importamos la fuente del logo, roboto (todo el documento) y Lora (encabezados) */
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
+
+/* Establecemos variables */
+:root {
+  --theme-violeta: 126, 45, 126;
+  --theme-rojo: 204, 43, 43;
+  --theme-azul: 23, 93, 173;
+  --theme-verde: 105, 155, 25;
+  --transition-time: 0.5s;
+  --transition-type: ease-in-out;
+  --min-width: 420px;
+  --max-width: 800px;
+
+  --theme-color_: var(--theme-violeta); /* Color por defecto */
+  --theme-color: rgb(var(--theme-color_));
+  --transitions: var(--transition-time) var(--transition-type);
+}
+
+#theme-selector-violeta {
+  background-color: rgb(var(--theme-violeta));
+}
+#theme-selector-rojo {
+  background-color: rgb(var(--theme-rojo));
+}
+#theme-selector-azul {
+  background-color: rgb(var(--theme-azul));
+}
+#theme-selector-verde {
+  background-color: rgb(var(--theme-verde));
+}
+
+body {
+  font-size: 12pt;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  min-width: var(--min-width);
+  background-color: var(--theme-color);
+  transition: background-color var(--transitions);
+}
+
+/* definimos el ancho máximo del contenido (el restro se centrará) */
+header#cabecera #branding,
+header#cabecera #theme-selector,
+header div#menu_principal nav,
+div#contenido,
+footer span,
+.fit-width-theme {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header#cabecera,
+#contenido_color {
+  margin: 0px;
+  padding: 0px;
+}
+
+header#cabecera #cabecera_color {
+  background-color: rgba(255, 255, 255, 0.651);
+}
+header#cabecera #branding {
+  margin: 0px auto;
+  padding: 8px 10px;
+  position: relative;
+}
+header#cabecera #branding img.logo {
+  float: left;
+  margin-right: 5px;
+}
+header#cabecera #branding h1,
+.logo {
+  color: rgb(var(--theme-color_));
+  transition: color var(--transitions);
+  margin: 0px;
+  font-size: 2.5em;
+  text-align: left;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -4px 15px,
+    red 0 -8px 40px;
+}
+
+header#cabecera #branding h1 span {
+  position: absolute;
+  left: 80px;
+  text-shadow: none;
+  filter: brightness(75%);
+}
+
+header#cabecera #branding h2 {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 2px 0px;
+  color: #333;
+  text-shadow: #e6e6e6 1px 2px 0, #aba8a8 1px 4px 5px;
+}
+
+header#cabecera #searchbox {
+  position: absolute;
+  top: 53px;
+  right: 15px;
+}
+header#cabecera #searchbox > div {
+  position: absolute;
+  margin-left: -44px;
+}
+header#cabecera #searchbox input[type="text"] {
+  width: 34px;
+  opacity: 0.6;
+  box-sizing: border-box;
+  border: 2px solid rgba(var(--theme-color_), 0.8);
+  border-radius: 23px;
+  font-size: 16px;
+  background-color: rgba(var(--theme-color_), 0.2);
+  background-image: url("/theme/images/searchicon_white.png");
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
+  padding: 6px;
+  transition: margin-left var(--transitions), width var(--transitions),
+    padding-left var(--transitions), background-color var(--transitions),
+    border var(--transitions);
+}
+
+header#cabecera #searchbox input[type="text"]:focus,
+header#cabecera #searchbox input[type="text"]:focus-visible {
+  margin-left: -198px;
+  width: 250px;
+  padding-left: 38px;
+  outline: 0;
+  background-color: rgba(var(--theme-color_), 0.8);
+  background-image: url("/theme/images/searchicon_white.png");
+  color: white;
+}
+
+header#cabecera #theme-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+header#cabecera #theme-selector > div {
+  position: fixed;
+  margin-left: -100px;
+  z-index: 50;
+}
+header#cabecera #theme-selector a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+header#cabecera #menu_principal {
+  background-color: rgba(201, 201, 201, 0.075);
+}
+header#cabecera #menu_principal nav {
+  line-height: 1.5em;
+  text-align: center;
+}
+header#cabecera #menu_principal nav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  transition: color 0.1s var(--transition-type),
+    background-color 0.1s var(--transition-type);
+  padding: 5px 10px;
+}
+header#cabecera #menu_principal nav a.active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header#cabecera #menu_principal nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: color 0.1s var(--transition-type),
+    background-color 0.1s var(--transition-type);
+}
+
+/*Menú responsive*/
+
+/* The navbar container */
+#menu_principal {
+  overflow: hidden;
+}
+
+/* Enlaces del menú */
+#menu_principal a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*Fin menú responsive*/
+
+.anchoCentrado {
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+#contenido_color {
+  background-color: #ffffff;
+  padding: 1px !important;
+  margin-top: 0px !important;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  padding: 10px;
+  color: #eee;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer p span {
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+/* clases genéricas */
+.normal {
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+}
+.negrita {
+  font-weight: bold;
+}
+.cursiva {
+  font-style: italic;
+}
+.subrayado {
+  text-decoration: underline;
+}
+.sobrerayado {
+  text-decoration: overline;
+}
+.entrerayado {
+  text-decoration: underline overline;
+}
+.tachado {
+  text-decoration: line-through;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.mayusculas {
+  text-transform: uppercase;
+}
+.minusculas {
+  text-transform: lowercase;
+}
+
+/* Para cajas de contenido */
+.transparent {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.border-top,
+.border-top-dashed {
+  border-top: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-right,
+.border-right-dashed {
+  border-right: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-bottom,
+.border-bottom-dashed {
+  border-bottom: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-left,
+.border-left-dashed {
+  border-left: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-top-dashed,
+.border-right-dashed,
+.border-bottom-dashed,
+.border-left-dashed {
+  border-style: dashed;
+}
+.border-none {
+  border-style: none;
+}
+.border-top-none {
+  border-top: none;
+}
+.border-right-none {
+  border-right: none;
+}
+.border-bottom-none {
+  border-bottom: none;
+}
+.border-left-none {
+  border-left: none;
+}
+
+/* Para resoluciones de menos de 550px */
+@media screen and (max-width: 550px) {
+  #menu_principal a {
+    float: none;
+    width: 100%;
+  }
+  header#cabecera #branding h2 {
+    font-size: 1.2em;
+  }
+}

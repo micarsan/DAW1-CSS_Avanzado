@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Carmona - EQUIPO 4" />
+    <meta name="description" content="eBroom - Escobas eléctricas a la vanguardia - Contacte con nosotros"/>
+    <meta name="keywords" content="escobas, electricas, voladoras, volar, contacto"/>
+    <title>eBroom :: Contacto</title>
+    <link rel="shortcut icon" type="image/ico" href="images/faviconbruja.ico" />
+    <link rel="stylesheet" href="theme/css/principal.css" type="text/css">
+    <link rel="stylesheet" href="theme/css/contacto.css" type="text/css">
+    <script src="https://kit.fontawesome.com/e8501bed14.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <div id="principal">
+      <!-- Inicio de cabecera -->
+      <header id="cabecera">
+      <div id="cabecera_color">
+        <div id="branding" class="anchoCentrado">
+          <img class="logo" src="theme/images/logo.png" width="65" height="89"/>
+          <h1>eBroom</h1>
+          <h2>Escobas voladoras eléctricas</h2>
+          <!-- Inicio menú de navegacion -->
+          <div id="menu_principal">
+            <nav>
+              <a href="index.html">Principal</a>
+              <a href="about-us.html">About US</a>
+              <a href="servicios.html">Servicios</a>
+              <a href="contacto.html">Contacto</a>
+              <a href="equipo-4.html">Equipo 4</a>
+            </nav>
+          </div>
+        </div>
+      </div>  
+      <!-- Fin menú de navegacion -->
+      </header>
+      <!-- Fin de cabecera -->
+
+      <!-- Inicio de cuerpo de página -->
+      <div id="contenido_color">
+        <div id="contenido" class="anchoCentrado">
+        <section id="datos-mapa">
+          <div id="datos">
+            <h3>eBroom Advanced Technology</h3>
+            <p>CESUR - DAW Equipo 4</p>
+            <p>Pl. Virgen Milagrosa, 11</p>
+            <p>29017 Málaga</p>
+            <p class="fas fa-cloud"><a href="/"> http://ebroom.com</a></p>
+            <p class="far fa-envelope"><a href="mailto:info@ebroom.com"> info@ebroom.com </a></p>
+          </div>
+          <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.1180292975387!2d-4.367823984742422!3d36.7197264799653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259120bfc4db3%3A0xec0ecedd8dc61902!2sCesur%20M%C3%A1laga%20Este%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1635187246005!5m2!1ses!2ses" width="300" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </section>
+       
+        <section id="formulario-contacto">
+          <h3>Formulario de contacto</h3>
+          <p>Rellene el siguiente formulario y le contactaremos lo antes posible.</p>
+          
+          <form action="/contacto-enviado.html" method="GET">
+            <table id="form_table">
+              <tr>
+                <td><label for="nombre">Introduzca su nombre: </label></td>
+                <td>
+                  <input required type="text" title="Nombre y apellidos" placeholder="su nombre (obligatorio)" id="nombre" name="nombre"/>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Introduzca su email: </label></td>
+                <td>
+                  <input required type="email" title="Su correo electrónico para ponernos en contacto" placeholder="su email (obligatorio)" id="email" name="email" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="fas fa-phone-alt" for="telefono"> Introduzca su teléfono: </label><br/ >
+                  <small>(ej. formato: 987654321)</small>
+                </td>
+                <td>
+                  <input type="tel" title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono" name="telefono" min="9" max="9" pattern="[0-9]{9}"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 <label for="sexo">Seleccione su sexo: </label><br />(opcional)
+                </td>
+                <td>
+                  <input type="radio" name="sexo" id="sexo-masculino" />
+                    <label for="sexo-masculino">Masculino</label>
+                  <input type="radio" name="sexo" id="sexo-femenino" />
+                    <label for="sexo-femenino">Femenino</label>
+                  <input type="radio" name="sexo" id="sexo-no-decir" checked/>
+                    <label for="sexo-no-decir">Prefiero no decirlo</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="tipo-consulta">Seleccione el motivo de consulta: </label>
+                  <p>(obligatorio)</p>
+                </td>
+                <td>
+                  <select required name="tipo-consulta" id="tipo-consulta">
+                    <option value="pedido">Referente a un pedido</option>
+                    <option value="producto">Referente a algún productos</option>
+                    <option value="otros">Otras consultas</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Escriba su consulta
+                  <p>(obligatorio)</p>
+                </td>
+                <td>
+                  <textarea required name="textarea" rows="10" cols="40"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <!--<center>-->
+                    <input type="checkbox" required name="terms" id="terms" />
+                      <label for="terms">Acepto los términos y condiciones</label>
+                  <!--</center>-->
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <!--<center>-->
+                    <input class="boton" type="submit" value="Enviar" />
+                    <input class="boton" type="reset" value="Restablecer" />
+                  <!--</center>-->
+                </td>
+              </tr>
+            </table>
+          </form>
+        </section>
+      <!--</div>-->
+    </div>
+  <!-- Fin de cuerpo de página -->
+    
+    <!-- Inicio de pie de página -->
+    <footer>
+      &reg; <b>eBroom</b> 2021 - <i>Todos los derechos reservados</i> - EQUIPO 4
+    </footer>
+    <!-- Fin de pie de página -->
+  </div>
+  </body>
+</html>
