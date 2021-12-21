@@ -22,25 +22,6 @@ section#formulario-contacto {
   padding-top: 10px;
 }
 
-.boton {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 15px;
-}
-
-.boton:hover {
-  color: white;
-  font-weight: bold;
-  background-color: black;
-}
-
 option {
   background-color: var(--theme-color);
-}
-
-table td {
-  border-style: none;
 }
