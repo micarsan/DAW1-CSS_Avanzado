@@ -15,8 +15,8 @@
 
 /*Tamaño, alineación, relleno, color de fondo, sombra del marco (sutil) y márgenes de las imágenes*/
 #imagenes img {
-  width: 320px;
-  height: 300px;
+  /*width: 320px;
+  height: 300px;*/
   text-align: center;
   padding: 10px 20px;
   background-color: white;
