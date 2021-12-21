@@ -1,5 +1,5 @@
 #principal {
-  background-color: rgb(224, 203, 143);
+  background-color: var(--theme-color);
 }
 
 nav#menu_principal {
@@ -8,11 +8,7 @@ nav#menu_principal {
 }
 
 #contenido {
-  background: linear-gradient(
-    to bottom,
-    rgb(250, 249, 249),
-    rgb(219, 200, 147)
-  );
+  background-color: var(--theme-color);
 }
 
 #imagen {
@@ -61,7 +57,7 @@ video {
   margin: auto;
   border: 3px;
   border: 3px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  background-color: var(--theme-color);
 }
 
 #tabla-equipo {
