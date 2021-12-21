@@ -1,16 +1,11 @@
 /*Menú cabecera*/
 #principal {
-  background-color: rgb(28, 214, 44);
-}
-/*Tipo de letra página*/
-body {
-  font-family: "Times New Roman", serif;
+  background-color: var(--theme-color);
 }
 
 /*Estilo de letra títutlos*/
 h3 {
-  color: rgba(8, 8, 8, 0.897);
-  text-shadow: 2px 2px 5px rgb(47, 165, 23);
+  text-shadow: 2px 2px 5px var(--theme-color);
 }
 
 /*Unión tabla*/
@@ -20,7 +15,7 @@ table.seguro {
 table.seguro td {
   border: 2px solid rgb(14, 11, 11);
   padding: 5px;
-  background-color: rgb(102, 238, 142);
+  background-color: var(--theme-color);
   text-align: center;
   outline-style: none;
 }
@@ -28,12 +23,12 @@ table.seguro td {
 table.seguro th {
   border: 2px solid rgb(14, 11, 11);
   padding: 5px;
-  background-color: rgb(33, 194, 67);
+  background-color: var(--theme-color);
   text-align: center;
   outline-style: none;
 }
 table.seguro .table-cabecera {
-  background-color: rgb(33, 194, 67);
+  background-color: var(--theme-color);
 }
 table.seguro th:first-child {
   border: 0px;
@@ -47,14 +42,14 @@ table.mantenimiento {
 table.mantenimiento td {
   border: 2px solid rgb(14, 11, 11);
   padding: 5px;
-  background-color: rgb(102, 238, 142);
+  background-color: var(--theme-color);
   text-align: center;
   outline-style: none;
 }
 table.mantenimiento th {
   border: 2px solid rgb(14, 11, 11);
   padding: 5px;
-  background-color: rgb(33, 194, 67);
+  background-color: var(--theme-color);
   text-align: center;
   outline-style: none;
 }
@@ -64,7 +59,7 @@ table.mantenimiento th:first-child {
   outline-style: none;
 }
 table.mantenimiento .table-cabecera {
-  background-color: rgb(33, 194, 67);
+  background-color: var(--theme-color);
 }
 /*Imagen radius*/
 img.border {

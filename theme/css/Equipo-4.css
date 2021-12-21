@@ -57,10 +57,6 @@ video {
   margin: auto;
 }
 
-iframe {
-  display: block;
-  margin: auto;
-}
 #iframe {
   margin: auto;
   border: 3px;
@@ -110,20 +106,4 @@ iframe {
 
 #texto1 {
   text-shadow: 2px 2px 2px #fff;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-}
-
-h1 {
-  font-size: 60px;
-  font-family: sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-h4,
-h3,
-h2 {
-  text-align: center;
 }

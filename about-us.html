@@ -5,8 +5,9 @@
     <meta name="author" content="David Navarro - EQUIPO 4" />
     <title>eBroom :: Sobre nosotros</title>
     <link rel="shortcut icon" type="image/ico" href="images/faviconbruja.ico" />
-    <link rel="stylesheet" href="/theme/css/principal.css" type="text/css" />
-    <link rel="stylesheet" href="/theme/css/about-us.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/principal.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/about-us.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/base.css" type="text/css" media="all" />
   </head>
   <body>
     <div id="principal">
@@ -14,25 +15,61 @@
         <header id="cabecera">
           <div id="cabecera_color">
             <div id="branding" class="anchoCentrado">
-              <img class="logo" src="theme/images/logo.png" width="65" height="89" />
-              <h1>eBroom</h1>
+              <img
+                class="logo"
+                src="./theme/images/logo.png"
+                width="65"
+                height="89"
+              />
+              <h1>eBroom<span>eBroom</span></h1>
               <h2>Escobas voladoras eléctricas</h2>
+  
+              <div id="searchbox">
+                <div>
+                  <form>
+                    <input type="text" name="search" placeholder="" />
+                  </form>
+                </div>
+              </div>
+              <div id="theme-selector">
+                <div>
+                  <a
+                    id="theme-selector-rojo"
+                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"
+                  >
+                  </a>
+                  <a
+                    id="theme-selector-verde"
+                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"
+                  >
+                  </a>
+                  <a
+                    id="theme-selector-azul"
+                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"
+                  >
+                  </a>
+                  <a
+                    id="theme-selector-violeta"
+                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"
+                  >
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        
           <!-- Inicio menú de navegacion -->
           <div id="menu_principal">
             <nav>
-              <a href="index.html">Principal</a> 
-              <a href="about-us.html">About US</a> 
-              <a href="servicios.html">Servicios</a> 
-              <a href="contacto.html">Contacto</a> 
-              <a href="equipo-4.html">Equipo 4</a>
+              <a href="./index.html" class="active">Principal</a
+              ><a href="./about-us.html">About US</a
+              ><a href="./servicios.html">Servicios</a
+              ><a href="./contacto.html">Contacto</a
+              ><a href="./equipo-4.html">Equipo 4</a>
             </nav>
           </div>
           <!-- Fin menú de navegacion -->
         </header>
-        <!-- Fin de cabecera -->
+        <!-- Fin de cabecera logo+menú -->
 
         <!-- Inicio de cuerpo de página -->
         <div id="contenido_color">

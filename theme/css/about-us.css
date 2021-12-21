@@ -1,11 +1,11 @@
 /*Color de fondo de la cabecera*/
 #principal {
-  background-color: gray;
+  background-color: var(--theme-color);;
 }
 
 /*Color de fondo del contenedor para toda la página*/
 #contenido {
-  background-color: darkgray;
+  background-color: var(--theme-color);;
 }
 
 /*Margen inferior de las del div de las imágenes para que no se solapen con las opiniones*/

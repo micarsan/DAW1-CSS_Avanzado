@@ -1,47 +1,3 @@
-/* Importamos la fuente del logo, roboto (todo el documento) y Lora (encabezados) */
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
-
-/* Establecemos variables */
-:root {
-  --theme-violeta: 126, 45, 126;
-  --theme-rojo: 204, 43, 43;
-  --theme-azul: 23, 93, 173;
-  --theme-verde: 105, 155, 25;
-  --transition-time: 0.5s;
-  --transition-type: ease-in-out;
-  --min-width: 420px;
-  --max-width: 800px;
-
-  --theme-color_: var(--theme-violeta); /* Color por defecto */
-  --theme-color: rgb(var(--theme-color_));
-  --transitions: var(--transition-time) var(--transition-type);
-}
-
-#theme-selector-violeta {
-  background-color: rgb(var(--theme-violeta));
-}
-#theme-selector-rojo {
-  background-color: rgb(var(--theme-rojo));
-}
-#theme-selector-azul {
-  background-color: rgb(var(--theme-azul));
-}
-#theme-selector-verde {
-  background-color: rgb(var(--theme-verde));
-}
-
-body {
-  font-size: 12pt;
-  font-weight: normal;
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  min-width: var(--min-width);
-  background-color: var(--theme-color);
-  transition: background-color var(--transitions);
-}
-
 /* definimos el ancho máximo del contenido (el restro se centrará) */
 header#cabecera #branding,
 header#cabecera #theme-selector,
@@ -208,14 +164,6 @@ header#cabecera #menu_principal nav a:hover {
   background-color: #ffffff;
   padding: 1px !important;
   margin-top: 0px !important;
-}
-
-footer {
-  text-align: center;
-  clear: both;
-  padding: 10px;
-  color: #eee;
-  background-color: rgba(255, 255, 255, 0.15);
 }
 
 footer p {
