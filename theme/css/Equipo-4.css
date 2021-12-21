@@ -2,11 +2,6 @@
   background-color: var(--theme-color);
 }
 
-nav#menu_principal {
-  display: block;
-  margin: auto;
-}
-
 #contenido {
   background-color: var(--theme-color);
 }

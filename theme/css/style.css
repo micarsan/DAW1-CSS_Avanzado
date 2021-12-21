@@ -1,3 +1,9 @@
+@import url("base.css"); 
+@import url("layout.css"); 
+@import url("menu.css"); 
+@import url("formulario.css");
+
+
 /* definimos el ancho máximo del contenido (el restro se centrará) */
 header#cabecera #branding,
 header#cabecera #theme-selector,
@@ -106,51 +112,6 @@ header#cabecera #theme-selector a {
   width: 20px;
   height: 20px;
   border: 1px solid black;
-}
-
-header#cabecera #menu_principal {
-  background-color: rgba(201, 201, 201, 0.075);
-}
-header#cabecera #menu_principal nav {
-  line-height: 1.5em;
-  text-align: center;
-}
-header#cabecera #menu_principal nav a {
-  text-decoration: none;
-  font-family: sans-serif;
-  display: inline-block;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
-  transition: color 0.1s var(--transition-type),
-    background-color 0.1s var(--transition-type);
-  padding: 5px 10px;
-}
-header#cabecera #menu_principal nav a.active {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-header#cabecera #menu_principal nav a:hover {
-  color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.4);
-  transition: color 0.1s var(--transition-type),
-    background-color 0.1s var(--transition-type);
-}
-
-/*Menú responsive*/
-
-/* The navbar container */
-#menu_principal {
-  overflow: hidden;
-}
-
-/* Enlaces del menú */
-#menu_principal a {
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 /*Fin menú responsive*/
