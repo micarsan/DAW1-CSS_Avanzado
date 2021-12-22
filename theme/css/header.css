@@ -15,6 +15,7 @@ header#cabecera #branding img.logo {
 
 header#cabecera #branding h2 {
   font-size: 1.5em;
+  font-weight: 600;
   text-align: left;
   margin: 2px 0px;
   color: #333;
@@ -32,6 +33,7 @@ header#cabecera #searchbox > div {
 }
 header#cabecera #searchbox input[type="text"] {
   width: 34px;
+  height: 34px;
   opacity: 0.6;
   box-sizing: border-box;
   border: 2px solid rgba(var(--theme-color_), 0.8);
