@@ -1,0 +1,107 @@
+
+header#cabecera #cabecera_color {
+  background-color: rgba(255, 255, 255, 0.651);
+}
+
+header#cabecera #branding {
+  margin: 0px auto;
+  padding: 8px 10px;
+  position: relative;
+}
+header#cabecera #branding img.logo {
+  float: left;
+  margin-right: 5px;
+}
+
+header#cabecera #branding h2 {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 2px 0px;
+  color: #333;
+  text-shadow: #e6e6e6 1px 2px 0, #aba8a8 1px 4px 5px;
+}
+
+header#cabecera #searchbox {
+  position: absolute;
+  top: 53px;
+  right: 15px;
+}
+header#cabecera #searchbox > div {
+  position: absolute;
+  margin-left: -44px;
+}
+header#cabecera #searchbox input[type="text"] {
+  width: 34px;
+  opacity: 0.6;
+  box-sizing: border-box;
+  border: 2px solid rgba(var(--theme-color_), 0.8);
+  border-radius: 23px;
+  font-size: 16px;
+  background-color: rgba(var(--theme-color_), 0.2);
+  background-image: url("../images/searchicon_white.png");
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
+  padding: 6px;
+  transition: margin-left var(--transitions), width var(--transitions),
+    padding-left var(--transitions), background-color var(--transitions),
+    border var(--transitions);
+}
+
+header#cabecera #searchbox input[type="text"]:focus,
+header#cabecera #searchbox input[type="text"]:focus-visible {
+  margin-left: -198px;
+  width: 250px;
+  padding-left: 38px;
+  outline: 0;
+  background-color: rgba(var(--theme-color_), 0.8);
+  background-image: url("../images/searchicon_white.png");
+  color: white;
+}
+
+header#cabecera #theme-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+header#cabecera #theme-selector > div {
+  position: fixed;
+  margin-left: -100px;
+  z-index: 50;
+}
+header#cabecera #theme-selector a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+/* Menú */
+header#cabecera #menu_principal {
+    background-color: rgba(201, 201, 201, 0.075);
+  }
+  header#cabecera #menu_principal nav {
+    line-height: 1.5em;
+    text-align: center;
+  }
+  header#cabecera #menu_principal nav a {
+    text-decoration: none;
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    transition: color 0.1s var(--transition-type),
+      background-color 0.1s var(--transition-type);
+    padding: 5px 10px;
+  }
+  header#cabecera #menu_principal nav a.active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  header#cabecera #menu_principal nav a:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: color 0.1s var(--transition-type),
+      background-color 0.1s var(--transition-type);
+  }
