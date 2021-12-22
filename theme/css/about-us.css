@@ -1,12 +1,12 @@
 /*Color de fondo de la cabecera*/
-#principal {
+/*#principal {
   background-color: var(--theme-color);;
-}
+}*/
 
 /*Color de fondo del contenedor para toda la página*/
-#contenido {
+/*#contenido {
   background-color: var(--theme-color);;
-}
+}*/
 
 /*Tamaño de las citas del 100% del ancho del contenedor*/
 principal #citas {

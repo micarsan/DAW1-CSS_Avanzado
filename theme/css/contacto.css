@@ -1,10 +1,10 @@
-#principal {
+/*#principal {
   background-color: var(--theme-color);
 }
 
 #contenido {
   background-color: var(--theme-color);
-}
+}*/
 
 table#form_table td {
   padding: 8px 4px;

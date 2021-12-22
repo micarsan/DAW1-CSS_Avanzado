@@ -1,178 +1,165 @@
 <!DOCTYPE html>
 <html lang="es_ES">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="David Navarro - EQUIPO 4" />
-    <title>eBroom :: Sobre nosotros</title>
-    <link rel="shortcut icon" type="image/ico" href="images/faviconbruja.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./theme/css/base.css" type="text/css" />
-    <link rel="stylesheet" href="./theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="./theme/css/menu.css" type="text/css" />
-    <link rel="stylesheet" href="./theme/css/about-us.css" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <div id="principal">
-        <!-- Inicio de cabecera logo -->
-        <header id="cabecera">
-          <div id="cabecera_color">
-            <div id="branding" class="anchoCentrado">
-              <img
-                class="logo"
-                src="./theme/images/logo.png"
-                width="65"
-                height="89"
-              />
-              <h1>eBroom<span>eBroom</span></h1>
-              <h2>Escobas voladoras eléctricas</h2>
-  
-              <div id="searchbox">
-                <div>
-                  <form>
-                    <input type="text" name="search" placeholder="" />
-                  </form>
-                </div>
-              </div>
-              <div id="theme-selector">
-                <div>
-                  <a
-                    id="theme-selector-rojo"
-                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"
-                  >
-                  </a>
-                  <a
-                    id="theme-selector-verde"
-                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"
-                  >
-                  </a>
-                  <a
-                    id="theme-selector-azul"
-                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"
-                  >
-                  </a>
-                  <a
-                    id="theme-selector-violeta"
-                    href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"
-                  >
-                  </a>
-                </div>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="David Navarro - EQUIPO 4" />
+  <title>eBroom :: Sobre nosotros</title>
+  <link rel="shortcut icon" type="image/ico" href="images/faviconbruja.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./theme/css/base.css" type="text/css" />
+  <link rel="stylesheet" href="./theme/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./theme/css/index.css" type="text/css" />
+  <link rel="stylesheet" href="./theme/css/menu.css" type="text/css" />
+  <link rel="stylesheet" href="./theme/css/about-us.css" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="principal">
+    <!-- Inicio de cabecera logo -->
+    <header id="cabecera">
+      <div id="cabecera_color">
+        <div id="branding" class="anchoCentrado">
+          <img class="logo" src="./theme/images/logo.png" width="65" height="89" />
+          <h1>eBroom<span>eBroom</span></h1>
+          <h2>Escobas voladoras eléctricas</h2>
+
+          <div id="searchbox">
+            <div>
+              <form>
+                <input type="text" name="search" placeholder="" />
+              </form>
             </div>
           </div>
-          <!-- Inicio menú de navegacion -->
-          <div id="menu_principal">
-            <nav>
-              <a href="./index.html" class="active">Principal</a
-              ><a href="./about-us.html">About US</a
-              ><a href="./servicios.html">Servicios</a
-              ><a href="./contacto.html">Contacto</a
-              ><a href="./equipo-4.html">Equipo 4</a>
-            </nav>
-          </div>
-          <!-- Fin menú de navegacion -->
-        </header>
-        <!-- Fin de cabecera logo+menú -->
-
-        <!-- Inicio de cuerpo de página -->
-        <div id="contenido_color">
-          <div id="contenido" class="anchoCentrado">
-            <h4>Nuestros orígenes:</h4>
-            <p>eBroom nace de la necesidad de incrementar la velocidad de movimiento <span class="negrita">en el transporte y el deporte.</span></p>
-
-            <h4>Nuestro trabajo:</h4>
-            <p>Nuestra compañía se centra <span class="negrita">en la venta, reparación y alquiler</span></b> de <span class="cursiva">Vehículos de Movilidad Personal</span> voladores.</p>
-
-              <h4>Exposición de escobas en tienda:</h4>
-              <!-- Carousel -->
-                <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
-                
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="media/images/escobas.jpg" alt="Escobas" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                      <h3>Exposición de escobas </h3>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="media/images/Nimbus_2000.jpg" alt="Nimbus 2000" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                      <h3>Nimbus 2000</h3>
-                    </div> 
-                  </div>
-                  <div class="carousel-item">
-                    <img src="media/images/expo-escoba.jpg" alt="Vista tienda" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                      <h3>Escoba expuesta</h3>
-                    </div>  
-                  </div>
-                </div>
-                
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-
-            <h4>Opiniones de nuestros clientes:</h4>
-            <div id="citas">
-              <blockquote>
-                <div class="cita">
-                  <p>Gracias a eBroom y sus escobas pude alcanzar mi primera snitch dorada.</p>
-                  <cite class="negrita">Harry Potter</cite>
-                </div>
-                <div class="cita">
-                  <p>Escobas a buen precio y con un buen servicio técnico</p>
-                  <cite class="negrita">Ronald Weasley</cite>
-                </div>
-              </blockquote>
+          <div id="theme-selector">
+            <div>
+              <a id="theme-selector-rojo"
+                href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"></a>
+              <a id="theme-selector-verde"
+                href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"></a>
+              <a id="theme-selector-azul"
+                href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"></a>
+              <a id="theme-selector-violeta"
+                href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"></a>
             </div>
-            <h4>Nuestro horario:</h4>
-            <table caption="Nuestro Horario">
-              <tr>
-                <th>Lunes</th>
-                <td>8:45 a 14:00 - 14:30 a 18:00</td>
-              </tr>
-              <tr>
-                <th>Martes</th>
-                <td>8:45 a 14:00 - 14:30 a 18:00</td>
-              </tr>
-              <tr>
-                <th>Miércoles</th>
-                <td>8:45 a 14:00 - 14:30 a 18:00</td>
-              </tr>
-              <tr>
-              <th>Jueves</th>
-              <td>8:45 a 14:00 - 14:30 a 18:00</td>
-              </tr>
-              <tr>
-              <th>Viernes</th>
-              <td>8:45 a 14:00</td>
-              </tr>
-            </table>
-
-            <h2>Los alumnos del primer curso de Actividades Físicas y Deportivas de CESUR realizan una práctica de vuelo con nuestros productos.</h2>
-            <iframe width="480" height="360" src="https://www.youtube.com/embed/VdAWbotZJWY"></iframe>
           </div>
         </div>
-        <!-- Fin de cuerpo de página -->
+      </div>
+      <!-- Inicio menú de navegacion -->
+      <div id="menu_principal">
+        <nav>
+          <a href="./index.html" class="active">Principal</a><a href="./about-us.html">About US</a><a
+            href="./servicios.html">Servicios</a><a href="./contacto.html">Contacto</a><a href="./equipo-4.html">Equipo
+            4</a>
+        </nav>
+      </div>
+      <!-- Fin menú de navegacion -->
+    </header>
+    <!-- Fin de cabecera logo+menú -->
+    <!-- Inicio de cuerpo de página -->
+    <div id="contenido_color">
+      <div id="contenido" class="anchoCentrado">
+        <h4>Nuestros orígenes:</h4>
+        <p>eBroom nace de la necesidad de incrementar la velocidad de movimiento <span class="negrita">en el transporte
+            y el deporte.</span></p>
 
-        <!-- Inicio de pie de página -->
-        <footer>
-          &reg; <b>eBroom</b> 2021 - <i>Todos los derechos reservados</i> - EQUIPO 4
-        </footer>
-        <!-- Fin de pie de página -->
+        <h4>Nuestro trabajo:</h4>
+        <p>Nuestra compañía se centra <span class="negrita">en la venta, reparación y alquiler</span></b> de <span
+            class="cursiva">Vehículos de Movilidad Personal</span> voladores.</p>
+
+        <h4>Exposición de escobas en tienda:</h4>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="media/images/escobas.jpg" alt="Escobas" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Exposición de escobas </h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="media/images/Nimbus_2000.jpg" alt="Nimbus 2000" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Nimbus 2000</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="media/images/expo-escoba.jpg" alt="Vista tienda" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Escoba expuesta</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <h4>Opiniones de nuestros clientes:</h4>
+        <div id="citas">
+          <blockquote>
+            <div class="cita">
+              <p>Gracias a eBroom y sus escobas pude alcanzar mi primera snitch dorada.</p>
+              <cite class="negrita">Harry Potter</cite>
+            </div>
+            <div class="cita">
+              <p>Escobas a buen precio y con un buen servicio técnico</p>
+              <cite class="negrita">Ronald Weasley</cite>
+            </div>
+          </blockquote>
+        </div>
+        <h4>Nuestro horario:</h4>
+        <table caption="Nuestro Horario">
+          <tr>
+            <th>Lunes</th>
+            <td>8:45 a 14:00 - 14:30 a 18:00</td>
+          </tr>
+          <tr>
+            <th>Martes</th>
+            <td>8:45 a 14:00 - 14:30 a 18:00</td>
+          </tr>
+          <tr>
+            <th>Miércoles</th>
+            <td>8:45 a 14:00 - 14:30 a 18:00</td>
+          </tr>
+          <tr>
+            <th>Jueves</th>
+            <td>8:45 a 14:00 - 14:30 a 18:00</td>
+          </tr>
+          <tr>
+            <th>Viernes</th>
+            <td>8:45 a 14:00</td>
+          </tr>
+        </table>
+
+        <h2>Los alumnos del primer curso de Actividades Físicas y Deportivas de CESUR realizan una práctica de vuelo con
+          nuestros productos.</h2>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/VdAWbotZJWY"></iframe>
+      </div>
     </div>
-  </body>
+    <!-- Fin de cuerpo de página -->
+
+    <!-- Inicio de pie de página -->
+    <footer>
+      &reg; <b>eBroom</b> 2021 - <i>Todos los derechos reservados</i> - EQUIPO 4
+    </footer>
+    <!-- Fin de pie de página -->
+  </div>
+</body>
+
 </html>
