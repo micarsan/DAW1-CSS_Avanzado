@@ -1,0 +1,27 @@
+/***** Estilos comunes *****/
+
+/* Variables */
+:root {
+    --min-width: 420px;
+    --max-width: 800px;
+}
+
+body {
+  margin: 0px;
+  min-width: var(--min-width);
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    clear: both;
+    padding: 10px;
+}
+
+
+/***** Estilos específicos para pantallas reducidas **/
+
+/***** Estilos específicos para pantallas grandes **/
