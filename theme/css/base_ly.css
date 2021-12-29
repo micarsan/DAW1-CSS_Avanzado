@@ -1,16 +1,9 @@
 /***** Estilos comunes *****/
 
-/* Variables */
-:root {
-    --min-width: 420px;
-    --max-width: 800px;
-}
-
 
 /* etiquetas comunes */
 body {
   margin: 0px;
-  min-width: var(--min-width);
 }
 
 iframe {
@@ -23,14 +16,58 @@ footer {
     padding: 10px;
 }
 
+footer p {
+  margin: 0px;
+}
+
+
+.anchoCentrado {
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.margin-none {
+  margin: 0px;
+}
+
 
 /* header */
+header#cabecera #branding,
+header#cabecera #theme-selector,
+header div#menu_principal nav,
+div#contenido,
+footer span,
+.fit-width-theme {
+  margin: 0 auto;
+}
 
+.logo {
+  margin: 0px;
+}
 
 /***** Estilos específicos para pantallas reducidas **/
 
 
 
 
-/***** Estilos específicos para pantallas grandes **/
- 
+/***** Estilos específicos para pantallas normales **/
+/* Establecemos variables */
+:root {
+    /*Anchos máximos y mínimos*/
+    --min-width: 420px;
+    --max-width: 800px;
+}
+
+body {
+  min-width: var(--min-width);
+}
+
+/* definimos el ancho máximo del contenido (el restro se centrará) */
+header#cabecera #branding,
+header#cabecera #theme-selector,
+header div#menu_principal nav,
+div#contenido,
+footer span,
+.fit-width-theme {
+  max-width: var(--max-width);
+}

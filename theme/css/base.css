@@ -1,10 +1,6 @@
-/* Importamos la fuente del logo, roboto (todo el documento) y Lora (encabezados) */
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
-
 /* Establecemos variables */
 :root {
+    /* Colores definidos para cambiar el tema*/
     --theme-violeta: 126, 45, 126;
     --theme-rojo: 204, 43, 43;
     --theme-azul: 23, 93, 173;
@@ -45,6 +41,7 @@ footer {
     text-align: center;
     color: #eee;
     background-color: var(--theme-color);
+    transition: background-color var(--transitions);
 }
 
 p {
@@ -69,4 +66,128 @@ a {
 a:hover {
     background-color: blue;
     color: white;
+}
+
+/* Diseño de logotipo */
+.logo {
+  color: rgb(var(--theme-color_));
+  transition: color var(--transitions);
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -4px 15px,
+    red 0 -8px 40px;
+}
+
+
+#contenido_color {
+  background-image: url("../images/index/patron-fondo.png");
+  background-color: rgba(255, 255, 255, 0.855) !important;
+  background-position: left top;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  transition: background-color var(--transitions),
+    background-image var(--transitions);
+}
+
+#contenido {
+  text-align: justify;
+}
+
+#contenido_color {
+  background-color: #ffffff;
+  padding: 1px !important;
+  margin-top: 0px !important;
+}
+
+footer p span {
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+
+/*** clases genéricas ***/
+.normal {
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+}
+.negrita {
+  font-weight: bold;
+}
+.cursiva {
+  font-style: italic;
+}
+.subrayado {
+  text-decoration: underline;
+}
+.sobrerayado {
+  text-decoration: overline;
+}
+.entrerayado {
+  text-decoration: underline overline;
+}
+.tachado {
+  text-decoration: line-through;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.mayusculas {
+  text-transform: uppercase;
+}
+.minusculas {
+  text-transform: lowercase;
+}
+
+/* Para cajas de contenido */
+.transparent {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.border-top,
+.border-top-dashed {
+  border-top: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-right,
+.border-right-dashed {
+  border-right: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-bottom,
+.border-bottom-dashed {
+  border-bottom: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-left,
+.border-left-dashed {
+  border-left: 10px solid rgba(var(--theme-color_), 0.5);
+  transition: border var(--transitions);
+}
+.border-top-dashed,
+.border-right-dashed,
+.border-bottom-dashed,
+.border-left-dashed {
+  border-style: dashed;
+}
+.border-none {
+  border-style: none;
+}
+.border-top-none {
+  border-top: none;
+}
+.border-right-none {
+  border-right: none;
+}
+.border-bottom-none {
+  border-bottom: none;
+}
+.border-left-none {
+  border-left: none;
 }
