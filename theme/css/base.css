@@ -1,74 +1,87 @@
 /* Establecemos variables */
 :root {
-    /* Colores definidos para cambiar el tema*/
-    --theme-violeta: 126, 45, 126;
-    --theme-rojo: 204, 43, 43;
-    --theme-azul: 23, 93, 173;
-    --theme-verde: 105, 155, 25;
-    --transition-time: 0.5s;
-    --transition-type: ease-in-out;
-    --theme-color_: var(--theme-violeta);
-    /* Color por defecto */
-    --theme-color: rgb(var(--theme-color_));
-    --transitions: var(--transition-time) var(--transition-type);
+  /* Colores definidos para cambiar el tema*/
+  --theme-violeta: 126, 45, 126;
+  --theme-rojo: 204, 43, 43;
+  --theme-azul: 23, 93, 173;
+  --theme-verde: 105, 155, 25;
+  --transition-time: 0.5s;
+  --transition-type: ease-in-out;
+  --theme-color_: var(--theme-violeta);
+  /* Color por defecto */
+  --theme-color: rgb(var(--theme-color_));
+  --transitions: var(--transition-time) var(--transition-type);
 }
 
 #theme-selector-violeta {
-    background-color: rgb(var(--theme-violeta));
+  background-color: rgb(var(--theme-violeta));
 }
 
 #theme-selector-rojo {
-    background-color: rgb(var(--theme-rojo));
+  background-color: rgb(var(--theme-rojo));
 }
 
 #theme-selector-azul {
-    background-color: rgb(var(--theme-azul));
+  background-color: rgb(var(--theme-azul));
 }
 
 #theme-selector-verde {
-    background-color: rgb(var(--theme-verde));
+  background-color: rgb(var(--theme-verde));
 }
 
 body {
-    font-weight: normal;
-    line-height: 1.2em;
-    font-size: 1.1em;
-    font-family: "Open Sans", sans-serif;
-    background-color: var(--theme-color);
-    transition: background-color var(--transitions);
+  font-weight: normal;
+  line-height: 1.2em;
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--theme-color);
+  transition: background-color var(--transitions);
 
 }
 
 footer {
-    text-align: center;
-    color: #eee;
-    background-color: var(--theme-color);
-    transition: background-color var(--transitions);
+  text-align: center;
+  color: #eee;
+  background-color: var(--theme-color);
+  transition: background-color var(--transitions);
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-    font-size: 60px;
-    font-family: "Lora", sans-serif;
-    color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: "Lora", sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 h4, h3, h2 {
-    text-align: center;
-    font-family: "Lora", sans-serif;
+  text-align: center;
+  font-family: "Lora", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  color: var(--theme-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--theme-color);
+  text-decoration: underline;
 }
 
-a:hover {
-    background-color: blue;
-    color: white;
+section .title {
+  font-family: "Lora", serif;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  text-align: left;
+  text-decoration: line-through;
+  color: rgb(var(--theme-color_));
+  text-decoration-color: rgba(var(--theme-color_), 0.2);
+  text-decoration-thickness: 44px;
+  transition: color var(--transitions), text-decoration-color var(--transitions);
 }
+
 
 /* Diseño de logotipo */
 .logo {
@@ -149,9 +162,38 @@ footer p span {
 }
 
 /* Para cajas de contenido */
-.transparent {
+.fondo-blanco-transparente {
   background-color: rgba(255, 255, 255, 0.4);
 }
+
+/* estilos para comentarios */
+.comentarios .quote blockquote {
+  background-color: rgb(255, 255, 255);
+  border: solid 2px #757575;
+}
+.comentarios .quote blockquote:before {
+  background-color: rgba(255, 255, 255, 0.83);
+}
+.comentarios .quote p {
+  transform: rotate(-2deg) skew(3deg);
+  text-indent: 0.6em;
+  font-style: italic;
+  font-family: "Montez", cursive;
+  font-size: 1.9em;
+  line-height: 1.2em;
+}
+.comentarios .quote blockquote cite {
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: right;
+}
+
+.comentarios .quote blockquote cite a:visited {
+  color: #999;
+}
+/* fin comentarios */
+
 .border-top,
 .border-top-dashed {
   border-top: 10px solid rgba(var(--theme-color_), 0.5);

@@ -11,6 +11,16 @@ iframe {
     margin: auto;
 }
 
+section {
+  margin: 1.5em 0px;
+  padding: 1.5em;
+}
+
+section .title {
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
 footer {
     clear: both;
     padding: 10px;
@@ -29,6 +39,41 @@ footer p {
 .margin-none {
   margin: 0px;
 }
+
+/* estilos para comentarios */
+.comentarios .quote {
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
+  width: 95%;
+}
+.comentarios .quote blockquote {
+  display: block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.comentarios .quote blockquote:before {
+  bottom: -10%;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: -10%;
+  transform: rotate(-12deg) skew(5deg);
+}
+.comentarios .quote p {
+  margin: 10px;
+}
+.comentarios .quote blockquote cite {
+  display: block;
+}
+
+.comentarios .quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 
 /* header */

@@ -44,23 +44,6 @@ section#introduccion .logo {
   text-shadow: none;
 }
 
-section {
-  margin: 1.5em 0px;
-  padding: 1.5em;
-}
-section h2 {
-  font-family: "Lora", serif;
-  font-size: 1.8em;
-  margin: 10px;
-  margin-bottom: 25px;
-  text-align: left;
-  text-decoration: line-through;
-  text-decoration-color: rgba(var(--theme-color_), 0.2);
-  text-decoration-thickness: 44px;
-  line-height: 1.5em;
-  color: rgb(var(--theme-color_));
-  transition: color var(--transitions), text-decoration-color var(--transitions);
-}
 
 section#somos-mejores ol li {
   line-height: 1.2em;
@@ -68,61 +51,6 @@ section#somos-mejores ol li {
   font-size: 1.1em;
 }
 
-section#comentarios .quote {
-  display: inline-block;
-  margin: 1em;
-  overflow: hidden;
-  width: 95%;
-}
-section#comentarios .quote blockquote {
-  background-color: rgb(255, 255, 255);
-  border: solid 2px #757575;
-  display: block;
-  margin: 0;
-  padding: 1em;
-  position: relative;
-}
-section#comentarios .quote blockquote:before {
-  background-color: rgba(255, 255, 255, 0.83);
-  bottom: -10%;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -10%;
-  transform: rotate(-12deg) skew(5deg);
-}
-section#comentarios .quote p {
-  transform: rotate(-2deg) skew(3deg);
-  text-indent: 0.6em;
-  font-style: italic;
-  font-family: "Montez", cursive;
-  font-size: 1.9em;
-  margin: 10px;
-}
-section#comentarios .quote blockquote cite {
-  font-family: "Lora", serif;
-  font-size: 1.2em;
-  display: block;
-  font-style: italic;
-  text-align: right;
-}
-
-section#comentarios .quote blockquote cite a {
-  text-decoration: none;
-  color: rgb(var(--theme-color_));
-}
-section#comentarios .quote blockquote cite a:hover {
-  text-decoration: underline;
-}
-section#comentarios .quote blockquote cite a:visited {
-  color: #999;
-}
-
-section#comentarios .quote blockquote > * {
-  position: relative;
-  z-index: 1;
-}
 
 section#comparativas {
   margin-bottom: 70px;
@@ -283,7 +211,7 @@ section#comparativas table td div.checked > div {
   color: #000;
 }
 
-#paralax .caption span.border {
+#paralax .caption span {
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   padding: 18px;
