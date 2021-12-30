@@ -9,7 +9,7 @@ h3 {
   background: transparent;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin-top: 30px;
 }
 #follow,
 #follow a,
@@ -39,11 +39,6 @@ h3 {
 }
 
 
-section#introduccion {
-  margin: 0px;
-  padding: 5px;
-}
-
 section#introduccion .logo {
   font-size: 1em;
   text-shadow: none;
@@ -71,71 +66,6 @@ section#somos-mejores ol li {
   line-height: 1.2em;
   margin: 0.7em;
   font-size: 1.1em;
-}
-
-section#novedades {
-  padding: 0px;
-  text-align: center;
-}
-
-section#novedades article {
-  background-color: rgba(var(--theme-color_), 0.75);
-  transition: background-color var(--transitions);
-  position: relative;
-  display: inline-block;
-  margin: 14px;
-  box-shadow: 1px 1px 9px 3px #999;
-}
-section#novedades figure {
-  padding: 10px;
-  margin: 0px;
-  background-color: rgba(255, 255, 255, 0.247);
-  display: table;
-}
-
-section#novedades figure span {
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 130px;
-  text-align: center;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-  padding: 10px;
-  border: 2px solid black;
-}
-section#novedades figure:hover span {
-  display: block;
-}
-
-section#novedades figure.first:hover img {
-  filter: blur(3px);
-}
-section#novedades figure.second:hover img {
-  filter: invert(70%);
-}
-section#novedades figure:hover img {
-  filter: grayscale(100%);
-}
-
-section#novedades figure figcaption {
-  padding: 0 10px 10px 10px;
-  color: var(--fontcolor);
-  text-align: center;
-  font-weight: 600;
-  display: table-caption;
-  caption-side: bottom;
-  text-shadow: 0px 0px 7px #ffffff;
-  background-color: rgba(255, 255, 255, 0.247);
-}
-
-section#comentarios {
-  margin: 20px 0px 40px 0px;
-  padding: 40px;
 }
 
 section#comentarios .quote {
@@ -295,7 +225,7 @@ section#comparativas table td div.checked > div {
   color: #777;
   background-color: white;
   text-align: center;
-  padding: 50px 80px;
+  padding: 100px 80px;
   text-align: justify;
 }
 #paralax span {
@@ -368,8 +298,8 @@ section#comparativas table td div.checked > div {
   margin: auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.75);
-  width: 277px;
-  height: 277px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 #paralax .caption div.second div.logo {

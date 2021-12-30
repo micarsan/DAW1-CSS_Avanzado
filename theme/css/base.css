@@ -30,11 +30,13 @@
 }
 
 body {
-    font-size: 12pt;
     font-weight: normal;
+    line-height: 1.2em;
+    font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
     background-color: var(--theme-color);
     transition: background-color var(--transitions);
+
 }
 
 footer {
