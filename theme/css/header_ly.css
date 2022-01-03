@@ -16,7 +16,7 @@ header#cabecera #branding h2 {
 header#cabecera #theme-selector {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 4px;
 }
 header#cabecera #theme-selector > div {
   position: fixed;
@@ -31,7 +31,7 @@ header#cabecera #theme-selector a {
 
 header#cabecera #searchbox {
   position: absolute;
-  top: 53px;
+  top: 50px;
   right: 15px;
 }
 header#cabecera #searchbox > div {
@@ -48,7 +48,7 @@ header#cabecera #searchbox input[type="text"] {
 
 header#cabecera #searchbox input[type="text"]:focus,
 header#cabecera #searchbox input[type="text"]:focus-visible {
-  margin-left: -198px;
+  margin-left: -200px;
   width: 250px;
   padding-left: 38px;
 }

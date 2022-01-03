@@ -1,0 +1,55 @@
+#follow {
+  padding: 0;
+}
+#follow a,
+#follow a:hover,
+#follow a:visited {
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-bottom: 5px;
+  line-height: 80px;
+}
+
+section#somos-mejores ol li {
+  line-height: 1.2em;
+  margin: 0.7em;
+  font-size: 1.1em;
+}
+
+#paralax div.text {
+  padding: 100px 80px;
+}
+
+#paralax .image-1,
+#paralax .image-2 {
+  position: relative;
+}
+
+#paralax .image-1, #paralax .image-2 {
+  min-height: 500px;
+}
+
+#paralax .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+}
+#paralax .caption span {
+  padding: 18px;
+}
+#paralax .image-2 .caption {
+  top: 18%;
+}
+#paralax .caption div.second {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+}
+#paralax .caption div.second div.logo {
+  position: absolute;
+  /* transform: translateY(-50%); */
+  top: 44%;
+}
