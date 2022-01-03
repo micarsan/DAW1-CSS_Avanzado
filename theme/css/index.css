@@ -107,7 +107,7 @@ section#somos-mejores ol li {
   font-size: 4em;
   font-family: "Montserrat", sans-serif;
   margin-top: 15px;
-  line-height: 0.7em;
+  line-height: 1.1em;
   letter-spacing: 1px;
   filter: invert(95%);
   color: rgba(var(--theme-color_), 0.41);
@@ -165,7 +165,7 @@ section#somos-mejores ol li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 210px;
+  width: fit-content;
   text-align: left;
   padding: 15px;
   left: 0;
@@ -174,8 +174,4 @@ section#somos-mejores ol li {
   background-color: rgba(var(--theme-color_), 0.9);
   transition: background-color var(--transitions);
   color: white;
-}
-#img-reflect div > span {
-  display: block;
-  padding-left: 19px;
 }

@@ -17,7 +17,7 @@ section#somos-mejores ol li {
 }
 
 #paralax div.text {
-  padding: 100px 80px;
+  padding: 80px 20px;
 }
 
 #paralax .image-1,
@@ -25,8 +25,11 @@ section#somos-mejores ol li {
   position: relative;
 }
 
-#paralax .image-1, #paralax .image-2 {
-  min-height: 500px;
+#paralax .image-1 {
+  min-height: 400px;
+}
+#paralax .image-2 {
+  min-height: 520px;
 }
 
 #paralax .caption {
