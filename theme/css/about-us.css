@@ -57,17 +57,9 @@ table {
 
 /*Posicionamento del iframe para el vídeo*/
 iframe {
+  margin: auto;
   margin-left: 20%;
-}
-
-/*Clase usada para poner ciertos textos en negrita*/
-.negrita {
-  font-weight: bold;
-}
-
-/*Clase usada para poner ciertos textos en cursiva*/
-.cursiva {
-  font-style: italic;
+  display: block;
 }
 
 /*Formato para los subtítulos H4, lo subrayamos, cambiamos color de fondo y alineamos al centro*/

@@ -1,15 +1,6 @@
 /***** Estilos comunes *****/
 
-
-/* etiquetas comunes */
-body {
-  margin: 0px;
-}
-
-iframe {
-    display: block;
-    margin: auto;
-}
+body { margin: 0px;}
 
 section {
   margin-bottom: 35px;
