@@ -13,17 +13,17 @@ header#cabecera #branding h2 {
   margin: 2px 0px;
 }
 
-header#cabecera #theme-selector {
+.theme-selector {
   position: absolute;
   top: 10px;
   right: 4px;
 }
-header#cabecera #theme-selector > div {
+.theme-selector > div {
   position: fixed;
   margin-left: -100px;
   z-index: 50;
 }
-header#cabecera #theme-selector a {
+.theme-selector a {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -56,4 +56,53 @@ header#cabecera #searchbox input[type="text"]:focus-visible {
 header#cabecera #menu_principal nav a {
   display: inline-block;
   padding: 5px 10px;
+}
+
+/***** Estilos específicos para pantallas reducidas **/
+@media screen and (max-width: 485px) {
+  body {
+    padding: 0!important;
+  }
+  #menu_principal, #theme-selector-pc, #searchbox { display: none; }
+  .offcanvas-backdrop {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+  .offcanvas-header { padding: 0.5rem 10px 0.5rem 1rem; }
+  .offcanvas-header .btn-close {
+    padding: 0;
+    margin: 0 10px 0 0;
+  }
+  .offcanvas-body > * {
+    margin-top: 1rem;
+  }
+  nav a {
+    display: block;
+    padding: 5px;
+  }
+  #buttom-burger {
+    display: block;
+  }
+  .theme-selector, .theme-selector > div {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center;
+  }
+  .theme-selector > div {
+    margin: 0;
+  }
+  .theme-selector a {
+    width: 65px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  .theme-selector a:last-child {
+    margin-right: 0;
+  }
+
+  .offcanvas-body .searchbox input {
+    width: 100%;
+    padding-left: 40px;
+  }
 }

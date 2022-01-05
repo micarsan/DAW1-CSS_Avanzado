@@ -1,4 +1,4 @@
-/* Establecemos variables */
+/* Establecemos variables para los temas */
 :root {
   /* Colores definidos para cambiar el tema*/
   --theme-violeta: 126, 45, 126;
@@ -51,13 +51,9 @@ p {
 }
 
 h1 {
-  font-size: 60px;
-  font-family: "Lora", sans-serif;
-  color: rgb(0, 0, 0);
+  font-size: 2.2em;
 }
-
-h4, h3, h2 {
-  text-align: center;
+h1, h2, h3, h4 {
   font-family: "Lora", sans-serif;
 }
 
@@ -70,6 +66,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Define los títulos de las secciones */
 section .title {
   font-family: "Lora", serif;
   font-size: 1.8em;
@@ -95,8 +92,8 @@ section .title {
     red 0 -8px 40px;
 }
 
-
-#contenido_color {
+/* Capa que define el fondo que mostrará toda la zona de contenido */
+#contenido_color, .fondo-principal {
   background-image: url("../images/index/patron-fondo.png");
   background-color: rgba(255, 255, 255, 0.855) !important;
   background-position: left top;
@@ -110,16 +107,9 @@ section .title {
   text-align: justify;
 }
 
-#contenido_color {
-  background-color: #ffffff;
-  padding: 1px !important;
-  margin-top: 0px !important;
-}
-
 footer p span {
   font-family: "Mochiy Pop One", sans-serif;
 }
-
 
 /*** clases genéricas ***/
 .normal {
@@ -194,6 +184,7 @@ footer p span {
 }
 /* fin comentarios */
 
+/* Bordes a aplicar a elementos */
 .border-top,
 .border-top-dashed {
   border-top: 10px solid rgba(var(--theme-color_), 0.5);

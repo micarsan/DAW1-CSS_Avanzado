@@ -1,4 +1,3 @@
-
 header#cabecera #cabecera_color {
   background-color: rgba(255, 255, 255, 0.651);
 }
@@ -34,7 +33,7 @@ header#cabecera #searchbox input[type="text"]:focus-visible {
   background-image: url("../images/searchicon_white.png");
 }
 
-header#cabecera #theme-selector a {
+.theme-selector a {
   border: 1px solid black;
 }
 
@@ -42,27 +41,75 @@ header#cabecera #theme-selector a {
 header#cabecera #menu_principal {
     background-color: rgba(201, 201, 201, 0.075);
   }
-  header#cabecera #menu_principal nav {
-    line-height: 1.5em;
-    text-align: center;
+header#cabecera #menu_principal nav {
+  line-height: 1.5em;
+  text-align: center;
+}
+header#cabecera #menu_principal nav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  transition: color 0.1s var(--transition-type),
+    background-color 0.1s var(--transition-type);
+}
+header#cabecera #menu_principal nav a.active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header#cabecera #menu_principal nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: color 0.1s var(--transition-type),
+    background-color 0.1s var(--transition-type);
+}
+
+/***** Estilos específicos para pantallas reducidas **/
+@media screen and (max-width: 485px) {
+  #menu-burger{
+    background-color: var(--theme-color);
+    transition: background-color var(--transitions);
   }
-  header#cabecera #menu_principal nav a {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+  .offcanvas-header {
     color: rgba(255, 255, 255, 0.6);
-    background-color: transparent;
-    transition: color 0.1s var(--transition-type),
-      background-color 0.1s var(--transition-type);
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color var(--transitions);
   }
-  header#cabecera #menu_principal nav a.active {
-    color: rgba(255, 255, 255, 0.7);
+  .fondo-principal {
+    height: -webkit-fill-available;
+  }
+  .offcanvas-header .btn-close {
+    font-size: 1.6em;
+  }
+  .offcanvas-body { line-height: 2em; }
+  nav a {
+    font-size: 1.6em;
+    transition: color var(--transitions);
+  }
+  .theme-selector a {
+    border-radius: 18px;
+    transition: color var(--transitions),
+      border var(--transitions);
   }
 
-  header#cabecera #menu_principal nav a:hover {
-    color: rgba(0, 0, 0, 0.6);
-    background-color: rgba(255, 255, 255, 0.4);
-    transition: color 0.1s var(--transition-type),
-      background-color 0.1s var(--transition-type);
+  .offcanvas-body .searchbox input {
+    color: white;
+    background-color: rgba(var(--theme-color_), 0.8);
+    transition: background-color var(--transitions),
+      border var(--transitions);
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    background-image: url('../images/searchicon_white.png');
+    opacity: 0.6;
+    border: 2px solid rgba(var(--theme-color_), 0.8);
+    border-radius: 23px;
+    font-size: 1.2em;
   }
+
+  .offcanvas-body .searchbox input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+}
