@@ -17,44 +17,42 @@ footer {
     padding: 10px;
 }
 
-footer p {
-  margin: 0px;
-}
-
 #contenido_color {
   padding: 1px !important;
   margin-top: 0px !important;
 }
 
-.anchoCentrado {
-  margin: 0px auto;
-  padding: 0px 10px;
+#buttom-burger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.margin-none {
-  margin: 0px;
-}
+.logo { margin: 0px;}
+.margin-none { margin: 0px;}
+.anchoCentrado { margin: 0px auto;}
 
 /* estilos para comentarios */
 .comentarios .quote {
   display: inline-block;
+  width: 95%;
   margin: 1em;
   overflow: hidden;
-  width: 95%;
 }
 .comentarios .quote blockquote {
+  position: relative;
   display: block;
   margin: 0;
   padding: 1em;
-  position: relative;
 }
 .comentarios .quote blockquote:before {
-  bottom: -10%;
-  content: "";
-  left: 0;
-  right: 0;
   position: absolute;
+  right: 0;
+  bottom: -10%;
+  left: 0;
   top: -10%;
+  content: "";
   transform: rotate(-12deg) skew(5deg);
 }
 .comentarios .quote p {
@@ -71,27 +69,11 @@ footer p {
 
 
 
-/* header */
-header#cabecera #branding,
-.theme-selector,
-header div#menu_principal nav,
-div#contenido,
-footer span,
-.fit-width-theme {
-  margin: 0 auto;
-}
-
-.logo {
-  margin: 0px;
-}
-
-
-
-/***** Estilos específicos para pantallas normales **/
+/***** Estilos específicos para pantallas habituales **/
 /* Establecemos variables */
 :root {
     /*Anchos máximos y mínimos*/
-    --min-width: 484px;
+    --min-width: 445px;
     --max-width: 800px;
 }
 
@@ -100,20 +82,9 @@ body {
 }
 
 /* definimos el ancho máximo del contenido (el restro se centrará) */
-header#cabecera #branding,
-header div#menu_principal nav,
-div#contenido,
-footer span,
-.fit-width-theme {
+header#cabecera #branding, header div#menu_principal nav,
+div#contenido, footer span, .fit-width-theme {
   max-width: var(--max-width);
-}
-
-#buttom-burger {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: rgb(var(--theme-color_));
 }
 
 /***** Estilos específicos para pantallas reducidas **/
