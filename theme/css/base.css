@@ -185,44 +185,20 @@ footer p span {
 /* fin comentarios */
 
 /* Bordes a aplicar a elementos */
-.border-top,
-.border-top-dashed {
-  border-top: 10px solid rgba(var(--theme-color_), 0.5);
-  transition: border var(--transitions);
-}
-.border-right,
-.border-right-dashed {
-  border-right: 10px solid rgba(var(--theme-color_), 0.5);
-  transition: border var(--transitions);
-}
-.border-bottom,
-.border-bottom-dashed {
-  border-bottom: 10px solid rgba(var(--theme-color_), 0.5);
-  transition: border var(--transitions);
-}
-.border-left,
-.border-left-dashed {
-  border-left: 10px solid rgba(var(--theme-color_), 0.5);
-  transition: border var(--transitions);
-}
-.border-top-dashed,
-.border-right-dashed,
-.border-bottom-dashed,
-.border-left-dashed {
-  border-style: dashed;
-}
-.border-none {
-  border-style: none;
-}
-.border-top-none {
-  border-top: none;
-}
-.border-right-none {
-  border-right: none;
-}
-.border-bottom-none {
-  border-bottom: none;
-}
-.border-left-none {
-  border-left: none;
-}
+.borde-top { border-top: 10px solid rgba(var(--theme-color_), 0.5);}
+.borde-right { border-right: 10px solid rgba(var(--theme-color_), 0.5);}
+.borde-bottom { border-bottom: 10px solid rgba(var(--theme-color_), 0.5);}
+.borde-left { border-left: 10px solid rgba(var(--theme-color_), 0.5);}
+.borde-top-dashed { border-top: 10px dashed rgba(var(--theme-color_), 0.5);}
+.borde-right-dashed { border-right: 10px dashed rgba(var(--theme-color_), 0.5);}
+.borde-bottom-dashed { border-bottom: 10px dashed rgba(var(--theme-color_), 0.5);}
+.borde-left-dashed { border-left: 10px dashed rgba(var(--theme-color_), 0.5);}
+.borde-none { border-style: none;}
+.borde-top-none { border-top: none;}
+.borde-right-none { border-right: none;}
+.borde-bottom-none { border-bottom: none;}
+.borde-left-none { border-left: none;}
+
+/* ### Efectos y transiciones ### */
+.borde-top, .borde-top-dashed, .borde-right, .borde-right-dashed, .borde-bottom,
+.borde-bottom-dashed, .borde-left, .borde-left-dashed { transition: border var(--transitions);}
