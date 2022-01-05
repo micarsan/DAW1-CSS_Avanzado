@@ -72,7 +72,7 @@
         </div>
         <!-- Inicio menú de navegacion -->
         <div id="menu_principal">
-          <nav>
+          <nav class="anchoCentrado">
             <a href="index.html" class="active">Principal</a
             ><a href="productos.html">Productos</a
             ><a href="servicios.html">Servicios</a
@@ -87,7 +87,7 @@
     <div id="contenido_color" class="fondo-principal">
       <div id="contenido" class="anchoCentrado">
         <section class="fondo-blanco-transparente">
-          <h4>Nuestro equipo</h4>
+          <h4 class="title center">Nuestro equipo</h4>
           <div id="tabla-equipo">
             <div>
               <img src="media/images/david.jpg" />
@@ -111,96 +111,110 @@
             </div>
           </div>
         </section>
-        <h4>Nuestros orígenes:</h4>
-        <p>eBroom nace de la necesidad de incrementar la velocidad de movimiento <span class="negrita">en el transporte
+
+        <section class="fondo-blanco-transparente">
+          <h4 class="title">Nuestros orígenes</h4>
+          <p>eBroom nace de la necesidad de incrementar la velocidad de movimiento <span class="negrita">en el transporte
             y el deporte.</span></p>
+        </section>
 
-        <h4>Nuestro trabajo:</h4>
-        <p>Nuestra compañía se centra <span class="negrita">en la venta, reparación y alquiler</span></b> de <span
+        <section class="fondo-blanco-transparente">
+          <h4 class="title">Nuestro trabajo</h4>
+          <p>Nuestra compañía se centra <span class="negrita">en la venta, reparación y alquiler</span></b> de <span
             class="cursiva">Vehículos de Movilidad Personal</span> voladores.</p>
+        </section>
 
-        <h4>Exposición de escobas en tienda:</h4>
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <section class="fondo-blanco-transparente">
+          <h4 class="title">Exposición de escobas en tienda</h4>
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/images/escobas.jpg" alt="Escobas" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>Exposición de escobas </h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="media/images/Nimbus_2000.jpg" alt="Nimbus 2000" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>Nimbus 2000</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="media/images/expo-escoba.jpg" alt="Vista tienda" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>Escoba expuesta</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
+        </section>  
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="media/images/escobas.jpg" alt="Escobas" class="d-block" style="width:100%">
-              <div class="carousel-caption">
-                <h3>Exposición de escobas </h3>
+        <section class="fondo-blanco-transparente">
+          <h4 class="title">Opiniones de nuestros clientes</h4>
+          <div id="citas">
+            <blockquote>
+              <div class="cita">
+                <p>Gracias a eBroom y sus escobas pude alcanzar mi primera snitch dorada.</p>
+                <cite class="negrita">Harry Potter</cite>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="media/images/Nimbus_2000.jpg" alt="Nimbus 2000" class="d-block" style="width:100%">
-              <div class="carousel-caption">
-                <h3>Nimbus 2000</h3>
+              <div class="cita">
+                <p>Escobas a buen precio y con un buen servicio técnico</p>
+                <cite class="negrita">Ronald Weasley</cite>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="media/images/expo-escoba.jpg" alt="Vista tienda" class="d-block" style="width:100%">
-              <div class="carousel-caption">
-                <h3>Escoba expuesta</h3>
-              </div>
-            </div>
+            </blockquote>
           </div>
-
-          <!-- Left and right controls/icons -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-
-        <h4>Opiniones de nuestros clientes:</h4>
-        <div id="citas">
-          <blockquote>
-            <div class="cita">
-              <p>Gracias a eBroom y sus escobas pude alcanzar mi primera snitch dorada.</p>
-              <cite class="negrita">Harry Potter</cite>
-            </div>
-            <div class="cita">
-              <p>Escobas a buen precio y con un buen servicio técnico</p>
-              <cite class="negrita">Ronald Weasley</cite>
-            </div>
-          </blockquote>
-        </div>
-        <h4>Nuestro horario:</h4>
-        <table caption="Nuestro Horario">
-          <tr>
-            <th>Lunes</th>
-            <td>8:45 a 14:00 - 14:30 a 18:00</td>
-          </tr>
-          <tr>
-            <th>Martes</th>
-            <td>8:45 a 14:00 - 14:30 a 18:00</td>
-          </tr>
-          <tr>
-            <th>Miércoles</th>
-            <td>8:45 a 14:00 - 14:30 a 18:00</td>
-          </tr>
-          <tr>
-            <th>Jueves</th>
-            <td>8:45 a 14:00 - 14:30 a 18:00</td>
-          </tr>
-          <tr>
-            <th>Viernes</th>
-            <td>8:45 a 14:00</td>
-          </tr>
-        </table>
-
-        <h4>Los alumnos del primer curso de Actividades Físicas y Deportivas de CESUR realizan una práctica de vuelo con
+        </section>
+        
+        <section class="fondo-blanco-transparente">
+          <h4 class="title">Nuestro horario</h4>
+          <table caption="Nuestro Horario">
+            <tr>
+              <th>Lunes</th>
+              <td>8:45 a 14:00 - 14:30 a 18:00</td>
+            </tr>
+            <tr>
+              <th>Martes</th>
+              <td>8:45 a 14:00 - 14:30 a 18:00</td>
+            </tr>
+            <tr>
+              <th>Miércoles</th>
+              <td>8:45 a 14:00 - 14:30 a 18:00</td>
+            </tr>
+            <tr>
+              <th>Jueves</th>
+              <td>8:45 a 14:00 - 14:30 a 18:00</td>
+            </tr>
+            <tr>
+              <th>Viernes</th>
+              <td>8:45 a 14:00</td>
+            </tr>
+          </table>
+        </section>
+        
+        <section class="fondo-blanco-transparente">
+          <h4 class="title justify">Los alumnos del primer curso de Actividades Físicas y Deportivas de CESUR realizan una práctica de vuelo con
           nuestros productos.</h4>
-        <iframe width="480" height="360" src="https://www.youtube.com/embed/VdAWbotZJWY"></iframe>
+          <iframe width="480" height="360" src="https://www.youtube.com/embed/VdAWbotZJWY"></iframe>
+        </section>
       </div>
     </div>
     <!-- Fin de cuerpo de página -->

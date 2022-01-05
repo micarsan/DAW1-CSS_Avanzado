@@ -50,7 +50,7 @@ principal #citas {
 
 /*Color de fondo gradiente de izquierda a derecha pasando del rojo al amarillo, márgenes y posición*/
 table {
-  background-image: linear-gradient(to right, red, yellow);
+  background-image: linear-gradient(to right, pink, purple);
   margin-left: 30%;
   position: relative;
 }
@@ -60,16 +60,4 @@ iframe {
   margin: auto;
   margin-left: 20%;
   display: block;
-}
-
-/*Formato para los subtítulos H4, lo subrayamos, cambiamos color de fondo y alineamos al centro*/
-h4 {
-  text-align: center;
-  color: rgb(var(--theme-color_));
-  font-size: 1.8em;
-  line-height: 1.5em;
-  font-family: "Lora", serif;
-  text-decoration: line-through;
-  text-decoration-color: rgba(var(--theme-color_), 0.2);
-  text-decoration-thickness: 44px;
 }
