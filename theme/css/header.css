@@ -38,14 +38,14 @@ header#cabecera #searchbox input[type="text"]:focus-visible {
 }
 
 /* Menú */
-header#cabecera #menu_principal {
+#menu_principal {
     background-color: rgba(201, 201, 201, 0.075);
-  }
-header#cabecera #menu_principal nav {
+}
+#menu_principal nav {
   line-height: 1.5em;
   text-align: center;
 }
-header#cabecera #menu_principal nav a {
+#menu_principal nav a {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
@@ -55,16 +55,30 @@ header#cabecera #menu_principal nav a {
   transition: color 0.1s var(--transition-type),
     background-color 0.1s var(--transition-type);
 }
-header#cabecera #menu_principal nav a.active {
+#menu_principal nav a.active {
   color: rgba(255, 255, 255, 0.7);
 }
 
-header#cabecera #menu_principal nav a:hover {
+#menu_principal nav a:hover {
   color: rgba(0, 0, 0, 0.6);
   background-color: rgba(255, 255, 255, 0.4);
   transition: color 0.1s var(--transition-type),
     background-color 0.1s var(--transition-type);
 }
+
+/* ### Efectos y transiciones ### */
+.borde-top, .borde-top-dashed, .borde-right, .borde-right-dashed, .borde-bottom,
+.borde-bottom-dashed, .borde-left, .borde-left-dashed {
+  transition: border var(--transitions);}
+body, footer, .fondo-principal {
+  transition: background-color var(--transitions);}
+.fondo-principal {
+  transition: background-image var(--transitions);}
+section .title, .logo {
+  transition: color var(--transitions)}
+section .title {
+  transition: text-decoration-color var(--transitions);}
+
 
 /***** Estilos específicos para pantallas reducidas **/
 @media screen and (max-width: 485px) {
@@ -95,17 +109,17 @@ header#cabecera #menu_principal nav a:hover {
   }
 
   .offcanvas-body .searchbox input {
+    opacity: 0.6;
+    font-size: 1.2em;
     color: white;
+    border: 2px solid rgba(var(--theme-color_), 0.8);
+    border-radius: 23px;
     background-color: rgba(var(--theme-color_), 0.8);
-    transition: background-color var(--transitions),
-      border var(--transitions);
     background-position: 8px 8px;
     background-repeat: no-repeat;
     background-image: url('../images/searchicon_white.png');
-    opacity: 0.6;
-    border: 2px solid rgba(var(--theme-color_), 0.8);
-    border-radius: 23px;
-    font-size: 1.2em;
+    transition: background-color var(--transitions),
+      border var(--transitions);
   }
 
   .offcanvas-body .searchbox input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

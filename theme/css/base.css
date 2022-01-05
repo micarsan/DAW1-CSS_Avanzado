@@ -152,6 +152,10 @@ footer p span {
 .borde-left-none { border-left: none;}
 
 /* ### Efectos y transiciones ### */
+section .title, .logo {
+  transition: color var(--transitions)}
+section .title {
+  transition: text-decoration-color var(--transitions);}
 .borde-top, .borde-top-dashed, .borde-right, .borde-right-dashed, .borde-bottom,
 .borde-bottom-dashed, .borde-left, .borde-left-dashed {
   transition: border var(--transitions);}
@@ -159,7 +163,3 @@ body, footer, .fondo-principal {
   transition: background-color var(--transitions);}
 .fondo-principal {
   transition: background-image var(--transitions);}
-section .title, .logo {
-  transition: color var(--transitions)}
-section .title {
-  transition: text-decoration-color var(--transitions);}
