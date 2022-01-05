@@ -10,7 +10,7 @@
 
 /*Tabla del equipo*/
 #tabla-equipo {
-  padding-left: 30px;
+  padding: 10px;
 }
 #tabla-equipo > div {
   width: 130px;
