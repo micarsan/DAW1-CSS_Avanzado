@@ -51,19 +51,19 @@ principal #citas {
 /*Color de fondo gradiente de izquierda a derecha pasando del rojo al amarillo, márgenes y posición*/
 table {
   background-image: linear-gradient(to right, pink, purple);
-  margin-left: 30%;
+  margin: auto;
   position: relative;
 }
+
 
 /*Posicionamento del iframe para el vídeo*/
 iframe {
   margin: auto;
-  margin-left: 20%;
   display: block;
 }
 
-section .title { 
-  text-align: center !important; 
+section .title {
+  text-align: center !important;
 }
 
 @media screen and (max-width: 485px) {
@@ -72,4 +72,3 @@ section .title {
     margin-left:0%
   }
 }
-
