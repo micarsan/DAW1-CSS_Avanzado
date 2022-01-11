@@ -163,3 +163,21 @@ body, footer, .fondo-principal {
   transition: background-color var(--transitions);}
 .fondo-principal {
   transition: background-image var(--transitions);}
+
+/*Estilo para tablas*/
+  .tabla {
+    margin: auto;
+    position: relative;
+  }
+  
+  .tabla td,th {
+    padding: 5px 10px;
+  }
+  
+  .tabla tr {
+    background-color: rgba(var(--theme-color_),0.4);
+  }
+  
+  .tabla tr:nth-child(even) {
+    background-color: rgba(var(--theme-color_),0.2);
+  }

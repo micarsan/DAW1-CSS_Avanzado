@@ -1,66 +1,8 @@
-/*Menú cabecera*/
-#principal {
-  background-color: var(--theme-color);
-}
-
-/*Estilo de letra títutlos*/
-h3 {
-  text-shadow: 2px 2px 5px var(--theme-color);
-}
-
 /*Unión tabla*/
 table.seguro {
   border-collapse: collapse;
 }
-table.seguro td {
-  border: 2px solid rgb(14, 11, 11);
-  padding: 5px;
-  background-color: var(--theme-color);
-  text-align: center;
-  outline-style: none;
-}
-/*Tabla seguros*/
-table.seguro th {
-  border: 2px solid rgb(14, 11, 11);
-  padding: 5px;
-  background-color: var(--theme-color);
-  text-align: center;
-  outline-style: none;
-}
-table.seguro .table-cabecera {
-  background-color: var(--theme-color);
-}
-table.seguro th:first-child {
-  border: 0px;
-  background-color: #fff;
-  outline-style: none;
-}
-/*Tabla mantenimiento*/
-table.mantenimiento {
-  border-collapse: collapse;
-}
-table.mantenimiento td {
-  border: 2px solid rgb(14, 11, 11);
-  padding: 5px;
-  background-color: var(--theme-color);
-  text-align: center;
-  outline-style: none;
-}
-table.mantenimiento th {
-  border: 2px solid rgb(14, 11, 11);
-  padding: 5px;
-  background-color: var(--theme-color);
-  text-align: center;
-  outline-style: none;
-}
-table.mantenimiento th:first-child {
-  border: 0px;
-  background-color: #fff;
-  outline-style: none;
-}
-table.mantenimiento .table-cabecera {
-  background-color: var(--theme-color);
-}
+
 /*Imagen radius*/
 img.border {
   border-radius: 100%;

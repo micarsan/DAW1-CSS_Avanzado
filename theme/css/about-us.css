@@ -48,14 +48,6 @@ principal #citas {
   padding: 10px;
 }
 
-/*Color de fondo gradiente de izquierda a derecha pasando del rojo al amarillo, márgenes y posición*/
-table {
-  background-image: linear-gradient(to right, pink, purple);
-  margin: auto;
-  position: relative;
-}
-
-
 /*Posicionamento del iframe para el vídeo*/
 iframe {
   margin: auto;
