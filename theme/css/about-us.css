@@ -3,7 +3,6 @@
   padding: 10px;
 }
 #tabla-equipo > div {
-  width: 130px;
   display: inline-block;
   margin: 5px;
   padding: 5px;
@@ -12,26 +11,16 @@
 }
 
 #tabla-equipo p {
-  text-align: center;
   font-size: 0.8em;
   font-weight: 800;
   margin: 10px 0px 0px 0px;
 }
 
-/*Tamaño de las citas del 100% del ancho del contenedor*/
-principal #citas {
-  margin-top:10%;
-  width: 100%;
-}
-
 /*Tamaño de las citas, así como disposición, color, márgenesy relleno*/
 .cita {
-  width: 30%;
-  height: 5%;
   display: inline-block;
   background-color: beige;
   border-radius: 10%;
-  text-align: justify;
   margin-left: 10%;
   margin-top: 10px;
   padding: 10px;
