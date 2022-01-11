@@ -1,0 +1,58 @@
+.productos {
+  text-align: center;
+}
+
+.productos article {
+  background-color: rgba(var(--theme-color_), 0.75);
+  transition: background-color var(--transitions);
+  position: relative;
+  display: inline-block;
+  margin: 14px;
+  box-shadow: 1px 1px 9px 3px #999;
+}
+.productos figure {
+  padding: 10px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.247);
+  display: table;
+}
+
+.productos figure span {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  text-align: center;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+}
+.productos figure:hover span {
+  display: block;
+}
+
+.productos figure.first:hover img {
+  filter: blur(3px);
+}
+.productos figure.second:hover img {
+  filter: invert(70%);
+}
+.productos figure:hover img {
+  filter: grayscale(100%);
+}
+
+.productos figure figcaption {
+  padding: 0 10px 10px 10px;
+  color: var(--fontcolor);
+  text-align: center;
+  font-weight: 600;
+  display: table-caption;
+  caption-side: bottom;
+  text-shadow: 0px 0px 7px #ffffff;
+  background-color: rgba(255, 255, 255, 0.247);
+}
