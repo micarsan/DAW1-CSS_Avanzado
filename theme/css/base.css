@@ -48,7 +48,6 @@ a:hover {
 
 /* Define los títulos de las secciones */
 section .title {
-  text-align: left;
   color: rgb(var(--theme-color_));
   font-size: 1.8em;
   line-height: 1.5em;
@@ -151,6 +150,8 @@ footer p span {
 .borde-bottom-none { border-bottom: none;}
 .borde-left-none { border-left: none;}
 
+.margin-top35 { margin-top: 35px; }
+
 /* ### Efectos y transiciones ### */
 section .title, .logo {
   transition: color var(--transitions)}
@@ -169,15 +170,15 @@ body, footer, .fondo-principal {
     margin: auto;
     position: relative;
   }
-  
+
   .tabla td,th {
     padding: 5px 10px;
   }
-  
+
   .tabla tr {
     background-color: rgba(var(--theme-color_),0.4);
   }
-  
+
   .tabla tr:nth-child(even) {
     background-color: rgba(var(--theme-color_),0.2);
   }
