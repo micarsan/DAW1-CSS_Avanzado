@@ -11,6 +11,11 @@ img.border {
 img.top {
   margin-top: 2%;
 }
-/*#contenido {
-  background-color: rgb(251, 251, 253);
-}*/
+
+section .tabla {
+  margin-bottom:20px;
+}
+
+section .title {
+  text-align: center !important;
+}

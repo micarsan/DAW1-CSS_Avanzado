@@ -181,3 +181,16 @@ body, footer, .fondo-principal {
   .tabla tr:nth-child(even) {
     background-color: rgba(var(--theme-color_),0.2);
   }
+
+/*Posicionamento del iframe para el vídeo*/
+iframe {
+  margin: auto;
+  display: block;
+}
+
+/*Posicionamiento del iframe en movil*/
+@media screen and (max-width: 485px) {
+  iframe {
+    width: 100%;
+  }
+}
