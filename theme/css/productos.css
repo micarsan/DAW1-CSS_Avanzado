@@ -27,23 +27,11 @@
   width: 130px;
   text-align: center;
   display: none;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(200, 0, 0, 0.75);
   color: white;
   padding: 10px;
-  border: 2px solid black;
-}
-.productos figure:hover span {
+  border: 2px solid rgba(90, 0, 0, 1);
   display: block;
-}
-
-.productos figure.first:hover img {
-  filter: blur(3px);
-}
-.productos figure.second:hover img {
-  filter: invert(70%);
-}
-.productos figure:hover img {
-  filter: grayscale(100%);
 }
 
 .productos figure figcaption {
