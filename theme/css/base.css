@@ -101,6 +101,9 @@ footer p span {
 .entrerayado { text-decoration: underline overline;}
 .tachado     { text-decoration: line-through;}
 
+.line-impar { background-color: rgba(var(--theme-color_), 0.2); transition: background-color var(--transitions);}}
+.line-par { background-color: rgba(var(--theme-color_), 0.1); transition: background-color var(--transitions);}}
+
 /* Para cajas de contenido */
 .fondo-blanco-transparente {
   background-color: rgba(255, 255, 255, 0.4);

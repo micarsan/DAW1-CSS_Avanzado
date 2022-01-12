@@ -108,7 +108,7 @@
           <p>Rellene el siguiente formulario y le contactaremos lo antes posible.</p>
 
           <form action="./contacto-enviado.html" method="GET" class="was-validated">
-            <div id="formulario">
+            <div id="formulario" class="formulario">
               <label class="form-label" for="nombre">Introduzca su nombre: (obligatorio)</label>
               <div>
                 <input required class="form-control" type="text" data-bs-toggle="tooltip" data-bs-placement="right"
@@ -134,15 +134,15 @@
               <div>
                 <ul>
                   <li>
-                    <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" />
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" value="Masculino" />
                     <label class="form-check-label" for="sexo-masculino">Masculino</label>
                   </li>
                   <li>
-                    <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" />
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" value="Femenino" />
                     <label class="form-check-label" for="sexo-femenino">Femenino</label>
                   </li>
                   <li>
-                    <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" checked />
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" value="Prefiero no decirlo" checked />
                     <label class="form-check-label" for="sexo-no-decir">Prefiero no decirlo</label>
                   </li>
                 </ul>
@@ -150,14 +150,14 @@
               <label class="form-label" for="tipo-consulta">Seleccione el motivo de consulta:</label>
               <div>
                 <select class="form-select" required name="tipo-consulta" id="tipo-consulta">
-                  <option value="pedido">Referente a un pedido</option>
-                  <option value="producto">Referente a algún productos</option>
-                  <option value="otros">Otras consultas</option>
+                  <option value="Referente a un pedido">Referente a un pedido</option>
+                  <option value="Referente a un producto">Referente a algún productos</option>
+                  <option value="Otras consultas">Otras consultas</option>
                 </select>
               </div>
               <label class="form-label" for="consulta">Escriba su consulta: (obligatorio)</label>
               <div>
-                <textarea id="consulta" class="form-control" required name="textarea" rows="10" cols="40"></textarea>
+                <textarea id="consulta" class="form-control" required name="consulta" rows="10" cols="40"></textarea>
               </div>
               <div class="width-100 center">
                 <input type="checkbox" class="form-check-input" required name="terms" id="terms" />

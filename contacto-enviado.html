@@ -1,62 +1,125 @@
 <!DOCTYPE html>
 <html lang="es_ES">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Miguel Carmona - EQUIPO 4" />
-    <meta
-      name="description"
-      content="eBroom - Escobas eléctricas a la vanguardia - contacto enviado"
-    />
+    <meta name="author" content="EQUIPO 4" />
+    <meta name="description" content="eBroom - Escobas eléctricas a la vanguardia" />
     <meta name="keywords" content="escobas, electricas, voladoras, volar" />
-    <title>eBroom :: formulario enviado</title>
-    <link rel="shortcut icon" type="image/ico" href="images/faviconbruja.ico" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <title>eBroom - Contacto</title>
+    <link rel="shortcut icon" type="image/ico" href="theme/images/faviconbruja.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="theme/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="theme/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="theme/css/contacto.css" type="text/css" media="all" />
+    <script src="theme/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      const url = new URLSearchParams(window.location.search);
+    </script>
+
   </head>
   <body>
-    <!-- Inicio de cabecera -->
-    <header id="cabecera">
-      <img
-        src="/images/logo.png"
-        width="65"
-        height="89"
-        style="float: left; margin-right: 5px;"
-      />
-      <h1>eBroom</h1>
-      <h2>Escobas voladoras eléctricas</h2>
-      <!-- Inicio menú de navegacion -->
-      <nav id="menu_principal">
-        <a href="index.html">Principal</a> &diams;
-        <a href="about-us.html">About US</a> &diams;
-        <a href="servicios.html">Servicios</a> &diams;
-        <a href="contacto.html">Contacto</a> &diams;
-        <a href="equipo-4.html">Equipo 4</a>
-      </nav>
-      <!-- Fin menú de navegacion -->
-    </header>
-    <!-- Fin de cabecera -->
+    <div id="principal">
+      <!-- Inicio de cabecera logo+menú -->
+      <header id="cabecera">
+        <!-- Menú burger -->
+        <div class="offcanvas offcanvas-end" id="menu-burger">
+            <div class="offcanvas-header">
+              <img class="logo" src="theme/images/logo.png" width="65" height="89" />
+              <h1 class="offcanvas-title logo">eBroom</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body fondo-principal">
+              <div class="theme-selector">
+                <div>
+                  <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
+                  <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
+                  <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
+                  <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+                </div>
+              </div>
+              <div class="searchbox"><input type="text" name="search" placeholder="buscar..." /></form></div>
+              <nav>
+                <a href="index.html" class="active">Principal</a
+                ><a href="productos.html">Productos</a
+                ><a href="servicios.html">Servicios</a
+                ><a href="contacto.html">Contacto</a
+                ><a href="about-us.html">About US</a>
+              </nav>
+            </div>
+        </div>
+        <!-- FIN Menú burger -->
+        <div id="cabecera_color">
+          <div id="branding" class="anchoCentrado branding">
+            <img class="logo" src="theme/images/logo.png" width="65" height="89" />
+            <h1 class="logo">eBroom</h1>
+            <h2>Escobas voladoras eléctricas</h2>
+            <div id="searchbox"><div>
+                <form><input type="text" name="search" placeholder="" /></form>
+            </div></div>
+            <div id="theme-selector-pc" class="theme-selector">
+              <div>
+                <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
+                <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
+                <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
+                <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+              </div>
+            </div>
+            <div id="buttom-burger">
+              <a id="buttom-burger" data-bs-toggle="offcanvas" data-bs-target="#menu-burger"><i class="fas fa-bars fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Inicio menú de navegacion -->
+        <div id="menu_principal">
+          <nav class="anchoCentrado">
+            <a href="index.html" class="active">Principal</a
+            ><a href="productos.html">Productos</a
+            ><a href="servicios.html">Servicios</a
+            ><a href="contacto.html">Contacto</a
+            ><a href="about-us.html">About US</a>
+          </nav>
+        </div>
+        <!-- Fin menú de navegacion -->
+      </header>
+    <!-- Fin de cabecera logo+menú -->
 
-    <!--Inicio de cuerpo de página-->
-    <br />
-    <section>
-      <h2>Formulario de contacto enviado correctamente</h2>
-      <p>Le contactaremos con la máxima brevedad posible</p>
+    <!-- Inicio de cuerpo de página -->
+    <div id="contenido_color" class="fondo-principal">
+      <div id="contenido" class="anchoCentrado">
+        <section class="fondo-blanco-transparente">
+          <h2 class="title center">&nbsp;Formulario de contacto enviado correctamente&nbsp;</h2>
+          <p class="center">Le contactaremos con la máxima brevedad posible</p>
 
-      <h4>Gracias por confiar en eBroom</h4>
-    </section>
-    <br />
-    <article>
-      <h3>Novedades:</h3>
-      <figure>
-        <img src="images/a-la-vanguardia.jpg" width="400" height="350" />
-        <figcaption>¡¡Pruebe nuestro nuevo modelo autónomo!!</figcaption>
-      </figure>
-    </article>
+          <fieldset class="formulario">
+            <legend>Datos enviados</legend>
+            <label class="line-impar">Nombre:</label>
+            <div class="line-impar"><script type="text/javascript">document.write(url.get('nombre'));</script></div>
+            <label>Email:</label>
+            <div><script type="text/javascript">document.write(url.get('email'));</script></div>
+            <label class="line-impar">Teléfono:</label>
+            <div class="line-impar"><script type="text/javascript">document.write(url.get('telefono'));</script></div>
+            <label>Sexo:</label>
+            <div><script type="text/javascript">document.write(url.get('sexo'));</script></div>
+            <label class="line-impar">Tipo de consulta:</label>
+            <div class="line-impar"><script type="text/javascript">document.write(url.get('tipo-consulta'));</script></div>
+            <label>Consulta:</label>
+            <div><script type="text/javascript">document.write(url.get('consulta').replace(/(?:\r\n|\r|\n)/g, '<br>'));</script></div>
+          </fieldset>
+        </section>
+        <br />
+
+      </div>
+    </div>
     <!-- Fin de cuerpo de página -->
-    <br />
+
     <!-- Inicio de pie de página -->
     <footer>
       &reg; <b>eBroom</b> 2021 - <i>Todos los derechos reservados</i> - EQUIPO 4
     </footer>
     <!-- Fin de pie de página -->
-  </body>
+  </div>
+</body>
 </html>
