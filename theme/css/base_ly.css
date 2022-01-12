@@ -28,6 +28,9 @@ footer {
     padding: 10px;
 }
 
+.width-25 { width: 25%;}
+.width-50 { width: 50%;}
+.width-100 { width: 100%;}
 
 /* definimos el ancho máximo del contenido (el restro se centrará) */
 header#cabecera #branding, header div#menu_principal nav,

@@ -92,8 +92,8 @@
             <p>Pl. Virgen Milagrosa, 11</p>
             <p>29017 Málaga</p>
             <p>
-              <span class="fas fa-cloud"><a href="/">http://ebroom.com</a></span> |
-              <span class="far fa-envelope"><a href="mailto:info@ebroom.com">info@ebroom.com </a></span>
+              <span class="fas fa-cloud"> <a href="/">http://ebroom.com</a></span> |
+              <span class="far fa-envelope"> <a href="mailto:info@ebroom.com">info@ebroom.com </a></span>
             </p>
           </div>
           <div id="mapa">
@@ -104,19 +104,19 @@
         </section>
 
         <section id="formulario-contacto" class="fondo-blanco-transparente">
-          <h3 class="title center">Formulario de contacto</h3>
+          <h3 class="title center">&nbsp;Formulario de contacto&nbsp;</h3>
           <p>Rellene el siguiente formulario y le contactaremos lo antes posible.</p>
 
           <form action="./contacto-enviado.html" method="GET" class="was-validated">
             <div id="formulario">
-              <label class="form-label" for="nombre">Introduzca su nombre: </label>
+              <label class="form-label" for="nombre">Introduzca su nombre: (obligatorio)</label>
               <div>
                 <input required class="form-control" type="text" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Nombre y apellidos" placeholder="su nombre (obligatorio)" id="nombre" name="nombre" />
                 <div class="valid-feedback">Válido</div>
                 <div class="invalid-feedback">Por favor rellene este campo</div>
               </div>
-              <label class="form-label" for="email">Introduzca su email: </label>
+              <label class="form-label" for="email">Introduzca su email: (obligatorio)</label>
               <div>
                 <input class="form-control" required type="email" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Su correo electrónico para ponernos en contacto" placeholder="su email (obligatorio)"
@@ -124,7 +124,7 @@
                 <div class="valid-feedback">Válido</div>
                 <div class="invalid-feedback">Rellene este campo con un email válido</div>
               </div>
-              <label class="fas fa-phone-alt" for="telefono"> Introduzca su teléfono: </label>
+              <label class="form-label" for="telefono">Introduzca su teléfono: </label>
               <div>
                 <input class="form-control" type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono"
@@ -147,7 +147,7 @@
                   </li>
                 </ul>
               </div>
-              <label for="tipo-consulta">Seleccione el motivo de consulta:</label>
+              <label class="form-label" for="tipo-consulta">Seleccione el motivo de consulta:</label>
               <div>
                 <select class="form-select" required name="tipo-consulta" id="tipo-consulta">
                   <option value="pedido">Referente a un pedido</option>
@@ -155,17 +155,17 @@
                   <option value="otros">Otras consultas</option>
                 </select>
               </div>
-              <label for="consulta">Escriba su consulta:<br />(obligatorio)</label>
+              <label class="form-label" for="consulta">Escriba su consulta: (obligatorio)</label>
               <div>
                 <textarea id="consulta" class="form-control" required name="textarea" rows="10" cols="40"></textarea>
               </div>
-              <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
-              <div>
+              <div class="width-100 center">
                 <input type="checkbox" class="form-check-input" required name="terms" id="terms" />
+                <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
                 <div class="valid-feedback">Válido</div>
                 <div class="invalid-feedback">Por favor, acepte los términos y condiciones para continuar</div>
               </div>
-              <div>
+              <div class="width-100 center">
                 <input class="btn btn-success" type="submit" value="Enviar" />
                 <input class="btn btn-danger" type="reset" value="Restablecer" />
               </div>
