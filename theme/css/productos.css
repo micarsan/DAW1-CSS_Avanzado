@@ -43,13 +43,13 @@
 
 .productos figure figcaption {
   padding: 10px;
-  color: var(--fontcolor);
+  color: white;
   text-align: center;
   font-weight: 800;
   display: table-caption;
   caption-side: bottom;
-  text-shadow: 0px 0px 7px #ffffff;
-  background-color: rgba(var(--theme-color_), 0.6);
+  text-shadow: 0px 0px 7px #000;
+  background-color: rgba(var(--theme-color_), 0.75);
   transition: background-color var(--transitions);
 }
 
