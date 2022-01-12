@@ -7,7 +7,7 @@
   --theme-verde: 105, 155, 25;
   --transition-time: 0.5s;
   --transition-type: ease-in-out;
-  --theme-color_: var(--theme-violeta);
+  --theme-color_: var(--theme-azul);
   /* Color por defecto */
   --theme-color: rgb(var(--theme-color_));
   --transitions: var(--transition-time) var(--transition-type);
@@ -96,6 +96,7 @@ footer p span {
 .minusculas  { text-transform: lowercase;}
 .negrita     { font-weight: bold;}
 .cursiva     { font-style: italic;}
+.normal      { text-decoration: none;}
 .subrayado   { text-decoration: underline;}
 .sobrerayado { text-decoration: overline;}
 .entrerayado { text-decoration: underline overline;}

@@ -6,6 +6,10 @@ h3 {
   font-weight: normal;
 }
 
+#buttom-burger {
+  color: var(--theme-color);
+}
+
 #follow {
   background: transparent;
   text-align: center;

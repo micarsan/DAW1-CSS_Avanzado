@@ -1,23 +1,27 @@
-.productos {
-  text-align: center;
+.productos>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .productos article {
-  background-color: rgba(var(--theme-color_), 0.75);
-  transition: background-color var(--transitions);
   position: relative;
-  display: inline-block;
-  margin: 14px;
-  box-shadow: 1px 1px 9px 3px #999;
+  flex: 31.5%;
+  max-width: 31.5%;
 }
 .productos figure {
-  padding: 10px;
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.247);
   display: table;
 }
 
-.productos figure span {
+.productos figure img {
+  width: 100%;
+  background-color: white;
+  border: 10px solid white;
+}
+
+.productos figure span.oferta {
   font-size: 1.2em;
   font-weight: bold;
   position: absolute;
@@ -27,7 +31,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 75%;
   text-align: center;
   display: none;
   background-color: rgba(var(--theme-color_), 0.85);
@@ -38,12 +42,38 @@
 }
 
 .productos figure figcaption {
-  padding: 0 10px 10px 10px;
+  padding: 10px;
   color: var(--fontcolor);
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   display: table-caption;
   caption-side: bottom;
   text-shadow: 0px 0px 7px #ffffff;
-  background-color: rgba(255, 255, 255, 0.247);
+  background-color: rgba(var(--theme-color_), 0.6);
+  transition: background-color var(--transitions);
+}
+
+.productos figure figcaption>span {
+  display: block;
+  font-weight: 400;
+  margin: 5px;
+}
+.productos figure figcaption>span>span {
+  display: inline-block;
+  margin: 0 10px;
+  color: red;
+}
+
+@media screen and (max-width: 485px) {
+  .productos article {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .productos article:last-child {
+    margin-bottom: 0;
+  }
+  .productos article figure{
+    width: 100%;
+  }
 }
