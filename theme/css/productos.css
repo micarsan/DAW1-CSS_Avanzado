@@ -1,6 +1,11 @@
 .productos>div {
   justify-content: space-between;
 }
+
+.productos article {
+  margin-bottom: 20px;
+}
+
 .productos figure {
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.247);
@@ -38,13 +43,10 @@
 }
 .productos figure figcaption>span>span {
   margin: 0 10px;
-  color: red;
+  color: rgb(220,70,40);
 }
 
 @media screen and (max-width: 485px) {
-  .productos article {
-    margin-bottom: 30px;
-  }
   .productos article:last-child {
     margin-bottom: 0;
   }
