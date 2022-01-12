@@ -1,0 +1,43 @@
+.productos>div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.productos article {
+  position: relative;
+  flex: 31.5%;
+  max-width: 31.5%;
+}
+.productos figure {
+  display: table;
+}
+.productos figure img {
+  width: 100%;
+}
+.productos figure span.oferta {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  width: 75%;
+}
+.productos figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+.productos figure figcaption>span {
+  display: block;
+}
+.productos figure figcaption>span>span {
+  display: inline-block;
+}
+
+@media screen and (max-width: 485px) {
+  .productos article {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .productos article figure{
+    width: 100%;
+  }
+}
