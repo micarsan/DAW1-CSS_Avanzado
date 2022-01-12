@@ -1,6 +1,17 @@
-/***** Estilos comunes *****/
+/***** Estilos específicos para pantallas habituales **/
+/* Establecemos variables */
+:root {
+    /*Anchos máximos y mínimos*/
+    --min-width: 445px;
+    --max-width: 800px;
+    --width-mobile: 485px;
+}
 
-body { margin: 0px;}
+/***** Etiquetas *****/
+body {
+  min-width: var(--min-width);
+  margin: 0px;
+}
 
 section {
   margin-bottom: 35px;
@@ -16,6 +27,19 @@ footer {
     clear: both;
     padding: 10px;
 }
+
+
+/* definimos el ancho máximo del contenido (el restro se centrará) */
+header#cabecera #branding, header div#menu_principal nav,
+div#contenido, footer span, .fit-width-theme {
+  max-width: var(--max-width);
+}
+
+/*Añadimos un margen superior para el primer elemento de contenido*/
+#contenido>*:first-child {
+  margin-top:20px;
+}
+
 
 #contenido_color {
   padding: 1px !important;
@@ -34,12 +58,31 @@ footer {
 .anchoCentrado { margin: 0px auto;}
 
 /* estilos para comentarios */
-.comentarios .quote {
-  display: inline-block;
-  width: 95%;
-  margin: 1em;
-  overflow: hidden;
+.comentarios .myrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.comentarios .mycolumn {
+  flex: 59%;
+  max-width: 49%;
+}
+.comentarios .quote {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 4%;
+}
+.comentarios .quote:first-child {margin-top: 0px;}
+
+@media (max-width: 485px) {
+  .comentarios .mycolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .comentarios .mycolumn .quote:first-child {margin-top: 4%;}
+  .comentarios .mycolumn:first-child .quote:first-child {margin-top: 0px;}
+}
+
 .comentarios .quote blockquote {
   position: relative;
   display: block;
@@ -61,30 +104,14 @@ footer {
 .comentarios .quote blockquote cite {
   display: block;
 }
-
 .comentarios .quote blockquote > * {
   position: relative;
   z-index: 1;
 }
 
-
-
-/***** Estilos específicos para pantallas habituales **/
-/* Establecemos variables */
-:root {
-    /*Anchos máximos y mínimos*/
-    --min-width: 445px;
-    --max-width: 800px;
-}
-
-body {
-  min-width: var(--min-width);
-}
-
-/* definimos el ancho máximo del contenido (el restro se centrará) */
-header#cabecera #branding, header div#menu_principal nav,
-div#contenido, footer span, .fit-width-theme {
-  max-width: var(--max-width);
-}
-
 /***** Estilos específicos para pantallas reducidas **/
+@media (max-width: 485px) {
+  iframe {
+    width: 100%;
+  }
+}

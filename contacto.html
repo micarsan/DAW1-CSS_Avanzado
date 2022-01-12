@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <link rel="stylesheet" href="theme/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="theme/css/index.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="theme/css/index_ly.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/contacto.css" type="text/css" media="all" />
     <script src="theme/bootstrap/js/bootstrap.min.js"></script>
   </head>
@@ -86,8 +84,8 @@
 
     <!-- Inicio de cuerpo de página -->
     <div id="contenido_color" class="fondo-principal">
-      <div id="contenido" class="anchoCentrado justify">
-        <section id="datos-mapa">
+      <div id="contenido" class="anchoCentrado">
+        <section id="datos-mapa" class="fondo-blanco-transparente">
           <div id="datos">
             <h3>eBroom Advanced Technology</h3>
             <p>CESUR - DAW Equipo 4</p>
@@ -133,7 +131,7 @@
                   <p><small>(ej. formato: 987654321)</small></p>
                 </td>
                 <td>
-                  <input type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
+                  <input class="form-control" type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
                     title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono"
                     name="telefono" min="9" max="9" pattern="[0-9]{9}" />
                 </td>
@@ -143,14 +141,19 @@
                   <label for="sexo">Seleccione su sexo: </label><br />(opcional)
                 </td>
                 <td>
-                  <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" />
-                  <label class="form-check-label" for="sexo-masculino">Masculino</label>
-
-                  <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" />
-                  <label class="form-check-label" for="sexo-femenino">Femenino</label>
-
-                  <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" checked />
-                  <label class="form-check-label" for="sexo-no-decir">Prefiero no decirlo</label>
+                  <ul>
+                    <li>
+                      <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" />
+                      <label class="form-check-label" for="sexo-masculino">Masculino</label>
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" />
+                      <label class="form-check-label" for="sexo-femenino">Femenino</label>
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" checked />
+                      <label class="form-check-label" for="sexo-no-decir">Prefiero no decirlo</label>
+                    </li>
                 </td>
               </tr>
               <tr>
@@ -177,7 +180,7 @@
                 </div>
               </tr>
               <tr>
-                <td colspan="2">
+                <td colspan="2" class="center">
                   <!--<center>-->
                   <input type="checkbox" class="form-check-input" required name="terms" id="terms" />
                   <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>

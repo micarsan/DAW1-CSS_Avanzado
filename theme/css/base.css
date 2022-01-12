@@ -107,7 +107,12 @@ footer p span {
 }
 
 /* estilos para comentarios */
+.comentarios>div {
+  display: flex;
+  flex-wrap: wrap;
+}
 .comentarios .quote blockquote {
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   border: solid 2px #757575;
 }
@@ -129,7 +134,7 @@ footer p span {
   text-align: right;
 }
 
-.comentarios .quote blockquote cite a:visited {
+.comentarios .quote blockquote cite, .comentarios .quote blockquote cite a:visited {
   color: #999;
 }
 /* fin comentarios */

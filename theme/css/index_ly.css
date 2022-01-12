@@ -1,3 +1,7 @@
+#contenido *:first-child {
+  margin-top: 0px;
+}
+
 #follow {
   padding: 0;
 }
