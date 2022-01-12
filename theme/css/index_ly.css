@@ -1,4 +1,4 @@
-#contenido *:first-child {
+#contenido>*:first-child {
   margin-top: 0px;
 }
 
