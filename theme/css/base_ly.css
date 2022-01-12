@@ -37,7 +37,7 @@ div#contenido, footer span, .fit-width-theme {
 
 /*Añadimos un margen superior para el primer elemento de contenido*/
 #contenido>*:first-child {
-  margin-top:20px;
+  margin-top:30px;
 }
 
 

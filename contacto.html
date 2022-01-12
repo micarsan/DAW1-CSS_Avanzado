@@ -87,118 +87,92 @@
       <div id="contenido" class="anchoCentrado">
         <section id="datos-mapa" class="fondo-blanco-transparente">
           <div id="datos">
-            <h3>eBroom Advanced Technology</h3>
+            <h2>eBroom Advanced Technology</h2>
             <p>CESUR - DAW Equipo 4</p>
             <p>Pl. Virgen Milagrosa, 11</p>
             <p>29017 Málaga</p>
-            <p class="fas fa-cloud"><a href="/"> http://ebroom.com</a></p>
-            <p class="far fa-envelope"><a href="mailto:info@ebroom.com"> info@ebroom.com </a></p>
+            <p>
+              <span class="fas fa-cloud"><a href="/">http://ebroom.com</a></span> |
+              <span class="far fa-envelope"><a href="mailto:info@ebroom.com">info@ebroom.com </a></span>
+            </p>
           </div>
           <div id="mapa">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.1180292975387!2d-4.367823984742422!3d36.7197264799653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259120bfc4db3%3A0xec0ecedd8dc61902!2sCesur%20M%C3%A1laga%20Este%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1635187246005!5m2!1ses!2ses"
-              width="300" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+              width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </section>
 
         <section id="formulario-contacto" class="fondo-blanco-transparente">
-          <h3>Formulario de contacto</h3>
+          <h3 class="title center">Formulario de contacto</h3>
           <p>Rellene el siguiente formulario y le contactaremos lo antes posible.</p>
 
           <form action="./contacto-enviado.html" method="GET" class="was-validated">
-            <table id="form_table">
-              <tr>
-                <td><label class="form-label" for="nombre">Introduzca su nombre: </label></td>
-                <td>
-                  <input required class="form-control" type="text" data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Nombre y apellidos" placeholder="su nombre (obligatorio)" id="nombre" name="nombre" />
+            <div id="formulario">
+              <label class="form-label" for="nombre">Introduzca su nombre: </label>
+              <div>
+                <input required class="form-control" type="text" data-bs-toggle="tooltip" data-bs-placement="right"
+                  title="Nombre y apellidos" placeholder="su nombre (obligatorio)" id="nombre" name="nombre" />
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor rellene este campo</div>
+              </div>
+              <label class="form-label" for="email">Introduzca su email: </label>
+              <div>
+                <input class="form-control" required type="email" data-bs-toggle="tooltip" data-bs-placement="right"
+                  title="Su correo electrónico para ponernos en contacto" placeholder="su email (obligatorio)"
+                  id="email" name="email" />
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Rellene este campo con un email válido</div>
+              </div>
+              <label class="fas fa-phone-alt" for="telefono"> Introduzca su teléfono: </label>
+              <div>
+                <input class="form-control" type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
+                  title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono"
+                  name="telefono" min="9" max="9" pattern="[0-9]{9}" />
+              </div>
+              <label for="sexo">Seleccione su sexo: (opcional)</label>
+              <div>
+                <ul>
+                  <li>
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" />
+                    <label class="form-check-label" for="sexo-masculino">Masculino</label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" />
+                    <label class="form-check-label" for="sexo-femenino">Femenino</label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" checked />
+                    <label class="form-check-label" for="sexo-no-decir">Prefiero no decirlo</label>
+                  </li>
+                </ul>
+              </div>
+              <label for="tipo-consulta">Seleccione el motivo de consulta:</label>
+              <div>
+                <select class="form-select" required name="tipo-consulta" id="tipo-consulta">
+                  <option value="pedido">Referente a un pedido</option>
+                  <option value="producto">Referente a algún productos</option>
+                  <option value="otros">Otras consultas</option>
+                </select>
+              </div>
+              <label for="consulta">Escriba su consulta:<br />(obligatorio)</label>
+              <div>
+                <textarea id="consulta" class="form-control" required name="textarea" rows="10" cols="40"></textarea>
+              </div>
+              <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+              <div>
+                <input type="checkbox" class="form-check-input" required name="terms" id="terms" />
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, acepte los términos y condiciones para continuar</div>
+              </div>
+              <div>
+                <input class="btn btn-success" type="submit" value="Enviar" />
+                <input class="btn btn-danger" type="reset" value="Restablecer" />
+              </div>
 
-                  <div class="valid-feedback">Válido</div>
-                  <div class="invalid-feedback">Por favor rellene este campo</div>
-                </td>
-              </tr>
-              <tr>
-                <td><label class="form-label" for="email">Introduzca su email: </label></td>
-                <td>
-                  <input class="form-control" required type="email" data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Su correo electrónico para ponernos en contacto" placeholder="su email (obligatorio)"
-                    id="email" name="email" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="fas fa-phone-alt" for="telefono"> Introduzca su teléfono: </label>
-                  <p><small>(ej. formato: 987654321)</small></p>
-                </td>
-                <td>
-                  <input class="form-control" type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono"
-                    name="telefono" min="9" max="9" pattern="[0-9]{9}" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="sexo">Seleccione su sexo: </label><br />(opcional)
-                </td>
-                <td>
-                  <ul>
-                    <li>
-                      <input class="form-check-input" type="radio" name="sexo" id="sexo-masculino" />
-                      <label class="form-check-label" for="sexo-masculino">Masculino</label>
-                    </li>
-                    <li>
-                      <input class="form-check-input" type="radio" name="sexo" id="sexo-femenino" />
-                      <label class="form-check-label" for="sexo-femenino">Femenino</label>
-                    </li>
-                    <li>
-                      <input class="form-check-input" type="radio" name="sexo" id="sexo-no-decir" checked />
-                      <label class="form-check-label" for="sexo-no-decir">Prefiero no decirlo</label>
-                    </li>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="tipo-consulta">Seleccione el motivo de consulta: </label>
-                  <p>(obligatorio)</p>
-                </td>
-                <td>
-                  <select class="form-select" required name="tipo-consulta" id="tipo-consulta">
-                    <option value="pedido">Referente a un pedido</option>
-                    <option value="producto">Referente a algún productos</option>
-                    <option value="otros">Otras consultas</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <div class="form-floating">
-                  <td>Escriba su consulta
-                    <p>(obligatorio)</p>
-                  </td>
-                  <td>
-                    <textarea class="form-control" required name="textarea" rows="10" cols="40"></textarea>
-                  </td>
-                </div>
-              </tr>
-              <tr>
-                <td colspan="2" class="center">
-                  <!--<center>-->
-                  <input type="checkbox" class="form-check-input" required name="terms" id="terms" />
-                  <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
-                  <div class="valid-feedback">Válido</div>
-                  <div class="invalid-feedback">Por favor, acepte los términos y condiciones para continuar</div>
-                  <!--</center>-->
-                </td>
-              </tr>
-              <tr class="botones">
-                <td colspan="2">
-                  <!--<center>-->
-                  <input class="btn btn-success" type="submit" value="Enviar" />
-                  <input class="btn btn-danger" type="reset" value="Restablecer" />
-                  <!--</center>-->
-                </td>
-              </tr>
-            </table>
-            <script>
+            </div>
+
+            <script type="text/javascript">
               // Initialize tooltips
               var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
               var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
