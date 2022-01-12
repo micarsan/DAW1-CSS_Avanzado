@@ -162,17 +162,18 @@ footer p span {
 .margin-top35 { margin-top: 35px; }
 
 /* ### Efectos y transiciones ### */
-section .title, .logo {
-  transition: color var(--transitions)}
+body, footer {
+  transition: background-color var(--transitions);}
+.fondo-principal {
+  transition: background-color var(--transitions), background-image var(--transitions);}
+.logo {
+  transition: color var(--transitions);}
 section .title {
-  transition: text-decoration-color var(--transitions);}
+  transition: color var(--transitions), text-decoration-color var(--transitions);}
 .borde-top, .borde-top-dashed, .borde-right, .borde-right-dashed, .borde-bottom,
 .borde-bottom-dashed, .borde-left, .borde-left-dashed {
   transition: border var(--transitions);}
-body, footer, .fondo-principal {
-  transition: background-color var(--transitions);}
-.fondo-principal {
-  transition: background-image var(--transitions);}
+
 
 /*Estilo para tablas*/
   .tabla {

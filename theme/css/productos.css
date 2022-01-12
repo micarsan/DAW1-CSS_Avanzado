@@ -16,6 +16,7 @@
 }
 .productos figure span.oferta {
   color: white;
+  text-shadow: 0px 0px 9px #000;
   font-size: 1.2em;
   font-weight: bold;
   transform: rotate(-30deg) skew(0deg);
@@ -28,22 +29,24 @@
 }
 
 .productos figure figcaption {
-  padding: 10px;
+  padding: 15px;
   color: white;
   text-align: center;
-  font-weight: 800;
-  text-shadow: 0px 0px 7px #000;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  font-size: 1.4em;
+  text-shadow: 0px 0px 5px #000;
   background-color: rgba(var(--theme-color_), 0.85);
   transition: background-color var(--transitions);
 }
 
 .productos figure figcaption>span {
   font-weight: 400;
-  margin: 5px;
+  margin-top: 10px;
 }
 .productos figure figcaption>span>span {
   margin: 0 10px;
-  color: rgb(220,70,40);
+  color: rgb(255,90,90);
 }
 
 @media screen and (max-width: 485px) {

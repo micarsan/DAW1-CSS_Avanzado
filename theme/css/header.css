@@ -66,19 +66,6 @@ header#cabecera #searchbox input[type="text"]:focus-visible {
     background-color 0.1s var(--transition-type);
 }
 
-/* ### Efectos y transiciones ### */
-.borde-top, .borde-top-dashed, .borde-right, .borde-right-dashed, .borde-bottom,
-.borde-bottom-dashed, .borde-left, .borde-left-dashed {
-  transition: border var(--transitions);}
-body, footer, .fondo-principal {
-  transition: background-color var(--transitions);}
-.fondo-principal {
-  transition: background-image var(--transitions);}
-section .title, .logo {
-  transition: color var(--transitions)}
-section .title {
-  transition: text-decoration-color var(--transitions);}
-
 
 /***** Estilos específicos para pantallas reducidas **/
 @media screen and (max-width: 485px) {
