@@ -3,6 +3,10 @@ table.seguro {
   border-collapse: collapse;
 }
 
+.tabla {
+  margin-bottom: 20px;
+}
+
 /*Imagen radius*/
 img.border {
   border-radius: 100%;
