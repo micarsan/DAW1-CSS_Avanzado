@@ -3,6 +3,10 @@
 }
 
 .cita {
-    width: 30%;
-    height: 5%;
+    width: 40%;
+    /*height: 5%;*/
+}
+
+.cita p {
+    height: 70%;
 }
