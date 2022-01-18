@@ -111,25 +111,34 @@
           <form action="./contacto-enviado.html" method="GET" class="was-validated">
             <div id="formulario" class="formulario">
               <label class="form-label" for="nombre">Introduzca su nombre: (obligatorio)</label>
-              <div>
+              <div class="input-group mb-3">
                 <input required class="form-control" type="text" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Nombre y apellidos" placeholder="su nombre (obligatorio)" id="nombre" name="nombre" />
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="far fa-user"></i></span>
+                  </div>
                 <div class="valid-feedback">Válido</div>
                 <div class="invalid-feedback">Por favor rellene este campo</div>
               </div>
               <label class="form-label" for="email">Introduzca su email: (obligatorio)</label>
-              <div>
+              <div class="input-group mb-3">
                 <input class="form-control" required type="email" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Su correo electrónico para ponernos en contacto" placeholder="su email (obligatorio)"
                   id="email" name="email" />
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
+                  </div>
                 <div class="valid-feedback">Válido</div>
                 <div class="invalid-feedback">Rellene este campo con un email válido</div>
               </div>
               <label class="form-label" for="telefono">Introduzca su teléfono: </label>
-              <div>
+              <div class="input-group mb-3">
                 <input class="form-control" type="tel" data-bs-toggle="tooltip" data-bs-placement="right"
                   title="Formato de 9 números sin espacios" placeholder="su teléfono (opcional)" id="telefono"
                   name="telefono" min="9" max="9" pattern="[0-9]{9}" />
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
               </div>
               <label for="sexo">Seleccione su sexo: (opcional)</label>
               <div>
@@ -152,7 +161,7 @@
               <div>
                 <select class="form-select" required name="tipo-consulta" id="tipo-consulta">
                   <option value="Referente a un pedido">Referente a un pedido</option>
-                  <option value="Referente a un producto">Referente a algún productos</option>
+                  <option value="Referente a un producto">Referente a algún producto</option>
                   <option value="Otras consultas">Otras consultas</option>
                 </select>
               </div>

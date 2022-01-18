@@ -24,3 +24,7 @@ fieldset.formulario legend {
 fieldset.formulario>div {
   font-style: italic;
 }
+
+.input-group-text i {
+  font-size: 1.5em;
+}
