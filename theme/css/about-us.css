@@ -4,7 +4,7 @@
 }
 #tabla-equipo > div {
   display: inline-block;
-  /* margin: 5px; */
+  margin: 5px;
   padding: 5px;
   background-color: #fff;
   box-shadow: 2px 2px 10px #888888;
@@ -17,11 +17,17 @@
 }
 
 /*Tamaño de las citas, así como disposición, color, márgenesy relleno*/
+
+blockquote {
+  display: flex;
+  flex: wrap;
+  justify-content: space-evenly;
+}
+
 .cita {
   display: inline-block;
   background-color: beige;
   border-radius: 10%;
-  margin-left: 10%;
   margin-top: 10px;
   padding: 10px;
 }
