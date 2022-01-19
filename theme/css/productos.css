@@ -19,7 +19,6 @@
   border: 10px solid white;
 }
 .productos figure .oferta {
-  transform: rotate(-30deg) skew(0deg);
   text-align: center;
 }
 .productos figure .oferta>span {
@@ -28,6 +27,7 @@
   font-size: 1.2em;
   font-weight: bold;
   padding: 10px 14px;
+  transform: rotate(-30deg) skew(0deg);
   background-color: rgba(var(--theme-color_), 0.85);
   transition: background-color var(--transitions);
 }
