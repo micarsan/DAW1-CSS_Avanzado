@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+/* Fuente para paralax */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("index_ly.css");
 
 
 h3 {
@@ -147,15 +148,6 @@ section#somos-mejores ol li {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
-
-/* Turn off parallax scrolling for tablets and phones /
-@media only screen and (max-device-width: 1024px) {
-  .image-1,
-  .image-2 {
-    background-attachment: scroll;
-  }
-}
-*/
 
 #img-reflect {
   position: relative;

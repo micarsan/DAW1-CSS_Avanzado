@@ -57,6 +57,5 @@ section#somos-mejores ol li {
 }
 #paralax .caption div.second div.logo {
   position: absolute;
-  /* transform: translateY(-50%); */
   top: 44%;
 }
