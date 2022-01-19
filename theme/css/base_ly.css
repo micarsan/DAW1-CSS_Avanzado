@@ -31,6 +31,15 @@ footer {
 .width-25 { width: 25%;}
 .width-50 { width: 50%;}
 .width-100 { width: 100%;}
+.margin-top35 { margin-top: 35px; }
+
+
+/* Estilos para tablas */
+.tabla {
+  margin: auto;
+  position: relative;
+}
+
 
 /* definimos el ancho máximo del contenido (el restro se centrará) */
 header#cabecera #branding, header div#menu_principal nav,

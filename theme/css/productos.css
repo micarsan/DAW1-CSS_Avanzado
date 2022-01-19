@@ -1,11 +1,9 @@
 .productos>div {
   justify-content: space-between;
 }
-
 .productos article {
   margin-bottom: 20px;
 }
-
 .productos figure {
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.247);
@@ -14,20 +12,19 @@
   background-color: white;
   border: 10px solid white;
 }
-.productos figure span.oferta {
+.productos figure .oferta {
+  transform: rotate(-30deg) skew(0deg);
+  text-align: center;
+}
+.productos figure .oferta>span {
   color: white;
   text-shadow: 0px 0px 9px #000;
   font-size: 1.2em;
   font-weight: bold;
-  transform: rotate(-30deg) skew(0deg);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  padding: 10px 14px;
   background-color: rgba(var(--theme-color_), 0.85);
   transition: background-color var(--transitions);
-  padding: 10px;
 }
-
 .productos figure figcaption {
   padding: 15px;
   color: white;
@@ -39,7 +36,6 @@
   background-color: rgba(var(--theme-color_), 0.85);
   transition: background-color var(--transitions);
 }
-
 .productos figure figcaption>span {
   font-weight: 400;
   margin-top: 10px;

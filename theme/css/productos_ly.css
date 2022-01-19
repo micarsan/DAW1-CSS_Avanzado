@@ -8,28 +8,31 @@
   max-width: 31.5%;
 }
 .productos figure {
-  display: table;
+  display: grid;
 }
 .productos figure img {
   width: 100%;
-}
-.productos figure span.oferta {
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  width: 75%;
+  grid-column: 1;
+  grid-row: 1;
 }
 .productos figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
+  grid-column: 1;
+  grid-row: 2;
 }
 .productos figure figcaption>span {
   display: block;
 }
 .productos figure figcaption>span>span {
   display: inline-block;
+}
+.productos figure .oferta {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+}
+.productos figure .oferta>span {
+  margin: auto;
+  display: block;
 }
 
 @media screen and (max-width: 485px) {

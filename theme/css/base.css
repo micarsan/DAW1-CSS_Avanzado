@@ -56,6 +56,10 @@ section .title {
   text-decoration-color: rgba(var(--theme-color_), 0.2);
   text-decoration-thickness: 44px;
 }
+section .title::before, section .title::after {
+  /*Añadimos un "espacio" al inicio y fin del títilo*/
+  content: "\2002";
+}
 
 
 /* Diseño de logotipo */
@@ -159,8 +163,6 @@ footer p span {
 .borde-bottom-none { border-bottom: none;}
 .borde-left-none { border-left: none;}
 
-.margin-top35 { margin-top: 35px; }
-
 /* ### Efectos y transiciones ### */
 body, footer {
   transition: background-color var(--transitions);}
@@ -176,11 +178,6 @@ section .title {
 
 
 /*Estilo para tablas*/
-  .tabla {
-    margin: auto;
-    position: relative;
-  }
-
   .tabla td,th {
     padding: 5px 10px;
   }
