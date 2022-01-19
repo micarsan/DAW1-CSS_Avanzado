@@ -3,8 +3,8 @@ section#datos-mapa {
   flex-wrap: wrap;
 }
 section#datos-mapa>div {
-  flex: 49%;
-  max-width: 49%;
+  flex: 100%;
+  max-width: 100%;
 }
 section#datos-mapa p{
   margin: 0.2em;
@@ -13,64 +13,16 @@ section#datos-mapa p:last-child {
   margin-top: 0.8em;
   margin-bottom: 0;
 }
-.formulario {
-  display: flex;
-  flex-wrap: wrap;
-}
-.formulario>label {
-  flex: 30%;
-}
-.formulario>div {
-  flex: 70%;
-  margin-bottom: 25px;
-}
-.formulario ul {
-  padding: 0;
-  margin: 0;
-}
-.formulario ul li {
-  padding: 5px 0;
-}
-.formulario .btn {
-  width: 150px;
+section#datos-mapa>div:first-child {
+  margin-bottom: 5%;
 }
 
-fieldset.formulario {
-  margin-top: 30px;
-  padding: 0;
-}
-fieldset.formulario legend {
-  float: none;
-  width: auto;
-  padding: 8px;
-  margin-left: 20px;
-}
-fieldset.formulario>label {
-  padding: 10px;
-}
-fieldset.formulario>div {
-  margin-bottom: 0px;
-  padding: 10px;
-}
-
-@media screen and (max-width: 485px) {
+@media screen and (min-width: 485px) {
   section#datos-mapa>div {
-    flex: 100%;
-    max-width: 100%;
+    flex: 50%;
+    max-width: 50%;
   }
   section#datos-mapa>div:first-child {
-    margin-bottom: 5%;
+    margin-bottom: 0;
   }
-
-  .formulario>label {
-    flex: 100%;
-  }
-  .formulario>div {
-    flex: 100%;
-    margin-bottom: 15px;
-  }
-  fieldset.formulario>label {
-    padding-bottom: 0;
-  }
-
 }

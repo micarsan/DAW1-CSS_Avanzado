@@ -1,0 +1,26 @@
+@import url("formulario_ly.css");
+.formulario {
+  justify-content: space-between;
+}
+.formulario ul {
+  list-style: none;
+}
+
+fieldset.formulario {
+  border: 1px solid var(--theme-color);
+  background-color: rgba(var(--theme-color_), 0.06);
+  border-radius: 5px;
+}
+fieldset.formulario legend {
+  font-size: 1.2em;
+  color: var(--theme-color);
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--theme-color);
+}
+fieldset.formulario>div {
+  font-style: italic;
+}
+.input-group-text i {
+  font-size: 1.5em;
+}

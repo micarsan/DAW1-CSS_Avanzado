@@ -61,7 +61,6 @@ section .title::before, section .title::after {
   content: "\2002";
 }
 
-
 /* Diseño de logotipo */
 .logo {
   text-align: left;

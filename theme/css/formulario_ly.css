@@ -1,0 +1,53 @@
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario>label {
+  flex: 100%;
+}
+.formulario>div {
+  flex: 100%;
+  margin-bottom: 15px;
+}
+.formulario ul {
+  padding: 0;
+  margin: 0;
+}
+.formulario ul li {
+  padding: 5px 0;
+}
+.formulario .btn {
+  width: 150px;
+}
+fieldset.formulario {
+  margin-top: 30px;
+  padding: 0;
+}
+fieldset.formulario legend {
+  float: none;
+  width: auto;
+  padding: 8px;
+  margin-left: 20px;
+}
+fieldset.formulario>label {
+  padding: 10px 10px 0 10px;
+}
+fieldset.formulario>div {
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 485px) {
+  .formulario>label {
+    flex: 30%;
+  }
+  .formulario>div {
+    flex: 70%;
+    margin-bottom: 25px;
+  }
+  fieldset.formulario>label {
+    padding: 10px;
+  }
+
+}
