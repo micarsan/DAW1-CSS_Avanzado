@@ -15,11 +15,9 @@
     <link rel="stylesheet" href="theme/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/contacto.css" type="text/css" media="all" />
+    <script type="text/javascript"> const url = new URLSearchParams(window.location.search); </script>
+    <script src="theme/js/change-theme-color.js"></script>
     <script src="theme/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      const url = new URLSearchParams(window.location.search);
-    </script>
-
   </head>
   <body>
     <div id="principal">
@@ -35,10 +33,10 @@
             <div class="offcanvas-body fondo-principal">
               <div class="theme-selector">
                 <div>
-                  <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
-                  <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
-                  <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
-                  <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+                  <a id="theme-selector-rojo" href="javascript:change_theme_color('var(--theme-rojo)');"> </a>
+                  <a id="theme-selector-verde" href="javascript:change_theme_color('var(--theme-verde)');"> </a>
+                  <a id="theme-selector-azul" href="javascript:change_theme_color('var(--theme-azul)');"> </a>
+                  <a id="theme-selector-violeta" href="javascript:change_theme_color('var(--theme-violeta)');"> </a>
                 </div>
               </div>
               <div class="searchbox"><input type="text" name="search" placeholder="buscar..." /></form></div>
@@ -62,10 +60,10 @@
             </div></div>
             <div id="theme-selector-pc" class="theme-selector">
               <div>
-                <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
-                <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
-                <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
-                <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+                <a id="theme-selector-rojo" href="javascript:change_theme_color('var(--theme-rojo)');"> </a>
+                <a id="theme-selector-verde" href="javascript:change_theme_color('var(--theme-verde)');"> </a>
+                <a id="theme-selector-azul" href="javascript:change_theme_color('var(--theme-azul)');"> </a>
+                <a id="theme-selector-violeta" href="javascript:change_theme_color('var(--theme-violeta)');"> </a>
               </div>
             </div>
             <div id="buttom-burger">

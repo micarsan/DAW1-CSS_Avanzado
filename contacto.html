@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="theme/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/contacto.css" type="text/css" media="all" />
     <link rel="stylesheet" href="theme/css/formulario.css" type="text/css" media="all" />
+    <script src="theme/js/change-theme-color.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -32,10 +33,10 @@
             <div class="offcanvas-body fondo-principal">
               <div class="theme-selector">
                 <div>
-                  <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
-                  <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
-                  <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
-                  <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+                  <a id="theme-selector-rojo" href="javascript:change_theme_color('var(--theme-rojo)');"> </a>
+                  <a id="theme-selector-verde" href="javascript:change_theme_color('var(--theme-verde)');"> </a>
+                  <a id="theme-selector-azul" href="javascript:change_theme_color('var(--theme-azul)');"> </a>
+                  <a id="theme-selector-violeta" href="javascript:change_theme_color('var(--theme-violeta)');"> </a>
                 </div>
               </div>
               <div class="searchbox"><input type="text" name="search" placeholder="buscar..." /></form></div>
@@ -59,10 +60,10 @@
             </div></div>
             <div id="theme-selector-pc" class="theme-selector">
               <div>
-                <a id="theme-selector-rojo" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-rojo)');"> </a>
-                <a id="theme-selector-verde" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-verde)');"> </a>
-                <a id="theme-selector-azul" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-azul)');"> </a>
-                <a id="theme-selector-violeta" href="javascript:document.querySelector(':root').style.setProperty('--theme-color_', 'var(--theme-violeta)');"> </a>
+                <a id="theme-selector-rojo" href="javascript:change_theme_color('var(--theme-rojo)');"> </a>
+                <a id="theme-selector-verde" href="javascript:change_theme_color('var(--theme-verde)');"> </a>
+                <a id="theme-selector-azul" href="javascript:change_theme_color('var(--theme-azul)');"> </a>
+                <a id="theme-selector-violeta" href="javascript:change_theme_color('var(--theme-violeta)');"> </a>
               </div>
             </div>
             <div id="buttom-burger">
