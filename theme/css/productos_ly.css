@@ -4,8 +4,8 @@
 }
 .productos article {
   position: relative;
-  flex: 31.5%;
-  max-width: 31.5%;
+  flex: 100%;
+  max-width: 100%;
 }
 .productos figure {
   display: grid;
@@ -35,12 +35,9 @@
   display: block;
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (min-width: 485px) {
   .productos article {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .productos article figure{
-    width: 100%;
+    flex: 31.5%;
+    max-width: 31.5%;
   }
 }
