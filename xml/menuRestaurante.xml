@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurante>
+  <menu categoria="Comida de los Montes">
+    <titulo lang="es">Menú 1</titulo>
+    <entrante>Consomé de ternera con reduccion de pasas</entrante>
+    <ingredientes>Ternera, Vino Pedro Ximenez, pasas, canela, clavos de olor</ingredientes>
+    <principal>Capón Asado al tomillo</principal>
+    <ingredientes>Capón, ajo, cebolla, vino blanco,Zumo de naranja, tomillo, orégano, Romero</ingredientes>
+    <postre>Café/Trufas de chocolate con avellana caramelizadas</postre>
+    <ingredientes> Trufas, vainilla en pasta, aroma de ron, trocitos de avellanas caramelizadas</ingredientes>
+    <precio>15.00</precio>
+  </menu>
+
+  <menu categoria="Comida Inglesa">
+    <titulo lang="es">Menú 2</titulo>
+    <entrante>Crema de esparragos blancos con nueces de pecán</entrante>
+    <ingredientes>Esparragos blancos,cebolla, patata, pimienta, pecán</ingredientes>
+    <principal>Lomo de cerdo ibérico al Pedro Ximenez con patatas baby</principal>
+    <ingredientes>Cerdo, Vino Pedro Ximenez, canela, clavos de olor</ingredientes>
+    <postre>Café/Tarta de queso helado con arandanos</postre>
+    <precio>20.00</precio>
+  </menu>
+
+  <menu categoria="Comida Italiana">
+    <titulo lang="es">Menú 3</titulo>
+    <entrante>Sopa Minestrone</entrante>
+    <principal>Carpaccio de solomillo con virutas de queso</principal>
+    <postre>Café/Crostata de peras y frambuesas</postre>
+    <precio>20.00</precio>
+  </menu>
+
+  <menu categoria="Comida Francesa">
+    <titulo lang="es">Menú 4 </titulo>
+    <entrante>Sopa de cebolla francesa con queso gratinado</entrante>
+    <principal>Buey a la borgoña</principal>
+    <postre>Café/Tarta Tatín de manzana</postre>
+    <precio>15.00</precio>
+  </menu>
+
+  <menu categoria="Infantil">
+    <titulo lang="es">Menú 5</titulo>
+    <entrante>Macarrones con tomate y queso gratinado</entrante>
+    <principal>Hamburguesa/Huevo frito con patatas</principal>
+    <postre>Helado de la carta/Mouse de chocolate</postre>
+    <precio>10.00</precio>
+  </menu>
+</restaurante>
