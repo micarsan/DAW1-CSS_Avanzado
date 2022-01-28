@@ -1,18 +1,29 @@
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-    <xs:element name="restaurante">
-        <xs:element name="menu">
-            <xs:complexType>
-                <xs:sequence>
-                    <xs:element name="titulo" type="xs:string"/>
-                    <xs:element name="entrante" type="xs:string"/>
-                    <xs:element name="ingredientes" type="xs:string"/>
-                    <xs:element name="principal" type="xs:string"/>
-                    <xs:element name="postre" type="xs:string"/>
-                    <xs:element name="precio" type="xs:integer"/>
-                </xs:sequence>
-            </xs:complexType>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="restaurante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="menu" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="titulo">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="lang" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="entrante"/>
+              <xs:element type="xs:string" name="ingredientes"/>
+              <xs:element type="xs:string" name="principal"/>
+              <xs:element type="xs:string" name="postre"/>
+              <xs:element type="xs:float" name="precio"/>
+            </xs:choice>
+            <xs:attribute type="xs:string" name="categoria" use="optional"/>
+          </xs:complexType>
         </xs:element>
-    </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
