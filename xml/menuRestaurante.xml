@@ -1,47 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<restaurante>
-  <menu categoria="Comida de los Montes">
-    <titulo lang="es">Menú 1</titulo>
-    <entrante>Consomé de ternera con reduccion de pasas</entrante>
-    <ingredientes>Ternera, Vino Pedro Ximenez, pasas, canela, clavos de olor</ingredientes>
-    <principal>Capón Asado al tomillo</principal>
-    <ingredientes>Capón, ajo, cebolla, vino blanco,Zumo de naranja, tomillo, orégano, Romero</ingredientes>
-    <postre>Café/Trufas de chocolate con avellana caramelizadas</postre>
-    <ingredientes> Trufas, vainilla en pasta, aroma de ron, trocitos de avellanas caramelizadas</ingredientes>
+<Restaurante>
+
+  <Menu categoria="Comida de los Montes">
+    <Titulo lang="es">Menu1</Titulo>
+    <Entrante>Consomé de ternera con reduccion de pasas</Entrante>
+    <Ingredientes>Ternera</Ingredientes>
+    <Ingredientes>Vino Pedro Ximenez</Ingredientes>
+    <Ingredientes>Pasas</Ingredientes>
+    <Principal>Capón Asado al tomillo</Principal>
+    <Ingredientes>Capón</Ingredientes>
+    <Ingredientes>Vino blanco</Ingredientes>
+    <Ingredientes>Zumo de naranja</Ingredientes>
+    <Postre>Café/Trufas de chocolate con avellana caramelizadas</Postre>
+    <Ingredientes>Trufas</Ingredientes>
+    <Ingredientes>Vainilla en pasta</Ingredientes>
+    <Ingredientes>Trocitos de avellanas caramelizadas</Ingredientes>
+    <precio>12.50</precio>
+  </Menu>
+
+<Menu categoria="Comida Inglesa">
+    <Titulo lang="es">Menu2</Titulo>
+    <Entrante>Crema de esparragos blancos con nueces de pecán</Entrante>
+    <Ingredientes>Esparragos</Ingredientes>
+    <Ingredientes>Cebolla</Ingredientes>
+    <Ingredientes>Pecán</Ingredientes>
+    <Principal>Lomo de cerdo ibérico al Pedro Ximenez con patatas baby</Principal>
+    <Ingredientes>Lomo de Cerdo Ibérico</Ingredientes>
+    <Ingredientes>Vino Pedro Ximenez</Ingredientes>
+    <Ingredientes>Canela</Ingredientes>
+    <Postre>Café/Tarta de queso helado con arandanos</Postre>
+    <Ingredientes>Queso crema</Ingredientes>
+    <Ingredientes>Nata montada</Ingredientes>
+    <Ingredientes>Arandanos</Ingredientes>
     <precio>15.00</precio>
-  </menu>
+  </Menu>
 
-  <menu categoria="Comida Inglesa">
-    <titulo lang="es">Menú 2</titulo>
-    <entrante>Crema de esparragos blancos con nueces de pecán</entrante>
-    <ingredientes>Esparragos blancos,cebolla, patata, pimienta, pecán</ingredientes>
-    <principal>Lomo de cerdo ibérico al Pedro Ximenez con patatas baby</principal>
-    <ingredientes>Cerdo, Vino Pedro Ximenez, canela, clavos de olor</ingredientes>
-    <postre>Café/Tarta de queso helado con arandanos</postre>
-    <precio>20.00</precio>
-  </menu>
-
-  <menu categoria="Comida Italiana">
-    <titulo lang="es">Menú 3</titulo>
-    <entrante>Sopa Minestrone</entrante>
-    <principal>Carpaccio de solomillo con virutas de queso</principal>
-    <postre>Café/Crostata de peras y frambuesas</postre>
-    <precio>20.00</precio>
-  </menu>
-
-  <menu categoria="Comida Francesa">
-    <titulo lang="es">Menú 4 </titulo>
-    <entrante>Sopa de cebolla francesa con queso gratinado</entrante>
-    <principal>Buey a la borgoña</principal>
-    <postre>Café/Tarta Tatín de manzana</postre>
+  <Menu categoria="Comida Italiana">
+    <Titulo lang="es">Menu3</Titulo>
+    <Entrante>Sopa Minestrone</Entrante>
+    <Ingredientes>Alubias blancas</Ingredientes>
+    <Ingredientes>Queso parmesano</Ingredientes>
+    <Ingredientes>Pasta corta seca</Ingredientes>
+    <Principal>Carpaccio de solomillo con virutas de queso</Principal>
+    <Ingredientes>Solomillo de buey</Ingredientes>
+    <Ingredientes>Queso parmesano rallado</Ingredientes>
+    <Ingredientes>Pimienta</Ingredientes>
+    <Postre>Café/Crostata de peras y frambuesas</Postre>
+    <Ingredientes>Peras</Ingredientes>
+    <Ingredientes>Licor de Frangelico</Ingredientes>
+    <Ingredientes>Frambuesas</Ingredientes>
     <precio>15.00</precio>
-  </menu>
+  </Menu>
 
-  <menu categoria="Infantil">
-    <titulo lang="es">Menú 5</titulo>
-    <entrante>Macarrones con tomate y queso gratinado</entrante>
-    <principal>Hamburguesa/Huevo frito con patatas</principal>
-    <postre>Helado de la carta/Mouse de chocolate</postre>
+  <Menu categoria="Comida Francesa">
+    <Titulo lang="es">Menu4 </Titulo>
+    <Entrante>Sopa de cebolla francesa con queso gratinado</Entrante>
+    <Ingredientes>Cebolla</Ingredientes>
+    <Ingredientes>Brandy</Ingredientes>
+    <Ingredientes>Queso rallado gruyere</Ingredientes>
+    <Principal>Buey a la borgoña</Principal>
+    <Ingredientes>Buey</Ingredientes>
+    <Ingredientes>Vino tinto de Borgoña</Ingredientes>
+    <Ingredientes>Champiñones</Ingredientes>
+    <Postre>Café/Tarta Tatín de manzana</Postre>
+    <Ingredientes>Yemas de huevo</Ingredientes>
+    <Ingredientes>Leche</Ingredientes>
+    <Ingredientes>Manzana</Ingredientes>
+    <precio>12.50</precio>
+  </Menu>
+
+  <Menu categoria="Infantil">
+    <Titulo lang="es">Menu5</Titulo>
+    <Entrante>Espaguetis con tomate y queso gratinado</Entrante>
+    <Ingredientes>Salsa de tomate natural</Ingredientes>
+    <Ingredientes>Espaguetis</Ingredientes>
+    <Ingredientes>Queso mozzarella rallado </Ingredientes>
+    <Principal>Hamburguesa/Huevo frito con patatas</Principal>
+    <Ingredientes>Carne molida de cuadril</Ingredientes>
+    <Ingredientes>Huevo frito</Ingredientes>
+    <Ingredientes>Patatas</Ingredientes>
+    <Postre>Helado de la carta/Mouse de chocolate</Postre>
+    <Ingredientes>Chocolate negro</Ingredientes>
+    <Ingredientes>Huevos</Ingredientes>
+    <Ingredientes>Nata líquida</Ingredientes>
     <precio>10.00</precio>
-  </menu>
-</restaurante>
+  </Menu>
+
+</Restaurante>
