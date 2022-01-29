@@ -15,7 +15,7 @@
                 </xs:complexType>
               </xs:element>
               <xs:element type="xs:string" name="entrante"/>
-              <xs:element type="xs:string" name="ingredientes"/>
+              <xs:element type="xs:string" name="ingrediente"/>
               <xs:element type="xs:string" name="principal"/>
               <xs:element type="xs:string" name="postre"/>
               <xs:element type="xs:float" name="precio"/>
