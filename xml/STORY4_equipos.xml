@@ -108,8 +108,8 @@
   </equipo>
 
   <equipo categoria="alevines">
-    <nombre>La fuente divina</nombre>
-    <posicion>1</posicion>
+    <nombre>Los lunes al sol</nombre>
+    <posicion>4</posicion>
     <jugador tipo="principal"><nombre>Antonio</nombre><edad>21</edad><sueldo>1257 €</sueldo></jugador>
     <jugador tipo="suplente"><nombre>Pepito</nombre><edad>25</edad><sueldo>1468 €</sueldo></jugador>
     <jugador tipo="principal"><nombre>Alejandra</nombre><edad>27</edad><sueldo>1674 €</sueldo></jugador>
@@ -121,8 +121,8 @@
   </equipo>
 
   <equipo categoria="alevines">
-    <nombre>La fuente divina</nombre>
-    <posicion>1</posicion>
+    <nombre>La mar picada</nombre>
+    <posicion>2</posicion>
     <jugador tipo="principal"><nombre>Billie</nombre><edad>21</edad><sueldo>1257 €</sueldo></jugador>
     <jugador tipo="suplente"><nombre>Masha</nombre><edad>25</edad><sueldo>1468 €</sueldo></jugador>
     <jugador tipo="principal"><nombre>Pingu</nombre><edad>27</edad><sueldo>1674 €</sueldo></jugador>
@@ -134,8 +134,8 @@
   </equipo>
 
   <equipo categoria="alevines">
-    <nombre>La fuente divina</nombre>
-    <posicion>1</posicion>
+    <nombre>Los leones varados</nombre>
+    <posicion>5</posicion>
     <jugador tipo="principal"><nombre>Amunike</nombre><edad>21</edad><sueldo>1257 €</sueldo></jugador>
     <jugador tipo="suplente"><nombre>Butragueño</nombre><edad>25</edad><sueldo>1468 €</sueldo></jugador>
     <jugador tipo="principal"><nombre>Sanchís</nombre><edad>27</edad><sueldo>1674 €</sueldo></jugador>
