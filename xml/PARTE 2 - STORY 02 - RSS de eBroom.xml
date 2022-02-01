@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>eBroom</title>
+  <link>https://equipo4daw.miguelcarmona.com/</link>
+  <description>eBroom - Escobas eléctricas a la vanguardia</description>
+  <category>online shop</category>
+  <copyright>&reg; <span>eBroom</span> 2022 - <i>Todos los derechos reservados</i> - DAW EQUIPO 4</copyright>
+  <item>
+    <title>Principal</title>
+    <link>https://equipo4daw.miguelcarmona.com/index.html</link>
+    <description>Introducción a nuestra empresa, servicios y a qué nos dedicamos. </description>
+  </item>
+  <item>
+    <title>Productos</title>
+    <link>https://equipo4daw.miguelcarmona.com/productos.html</link>
+    <description>Productos</description>
+  </item>
+</channel>
+
+</rss>
