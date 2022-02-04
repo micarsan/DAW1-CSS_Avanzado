@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <atom:link href="https://equipo4daw.miguelcarmona.com/rss.xml" rel="self" type="application/rss+xml" />
+  <title>eBroom</title>
+  <link>https://equipo4daw.miguelcarmona.com/</link>
+  <description>eBroom - Escobas eléctricas a la vanguardia</description>
+  <image>
+    <url>https://equipo4daw.miguelcarmona.com/xml/rss_media/principal.png</url>
+    <title>eBroom</title>
+    <link>https://equipo4daw.miguelcarmona.com/</link>
+  </image>
+  <language>es-es</language>
+  <category>online shop</category>
+  <pubDate>Wed, 02 Feb 2022 11:00:00 GMT</pubDate>
+  <copyright>eBroom 2022 - Todos los derechos reservados - 1ºDAW EQUIPO 4</copyright>
+  <item>
+    <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/index.html</guid>
+    <title>Principal</title>
+    <link>https://equipo4daw.miguelcarmona.com/index.html</link>
+    <description>Introducción a nuestra empresa, servicios y a qué nos dedicamos. </description>
+  </item>
+  <item>
+    <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/productos.html</guid>
+    <title>Productos</title>
+    <link>https://equipo4daw.miguelcarmona.com/productos.html</link>
+    <description>Nuestros novedosos productos sobre las mejores escobas voladoras eléctricas del mercado.</description>
+  </item>
+  <item>
+    <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/servicios.html</guid>
+    <title>Servicios</title>
+    <link>https://equipo4daw.miguelcarmona.com/servicios.html</link>
+    <description>Los mejores servicios para sus escobas eléctricas de eBroom.</description>
+  </item>
+  <item>
+    <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/contacto.html</guid>
+    <title>Contacto</title>
+    <link>https://equipo4daw.miguelcarmona.com/contacto.html</link>
+    <description>Sepa dónde estamos o contáctenos a través de los datos de contacto o el formulario.</description>
+  </item>
+  <item>
+    <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/about-us.html</guid>
+    <title>About Us</title>
+    <link>https://equipo4daw.miguelcarmona.com/about-us.html</link>
+    <description>Todo sobre nuestro equpo de eBroom</description>
+  </item>
+</channel>
+
+</rss>
