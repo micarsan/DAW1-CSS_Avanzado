@@ -7,7 +7,7 @@
   <link>https://equipo4daw.miguelcarmona.com/</link>
   <description>eBroom - Escobas eléctricas a la vanguardia</description>
   <image>
-    <url>https://equipo4daw.miguelcarmona.com/xml/rss_media/principal.png</url>
+    <url>https://equipo4daw.miguelcarmona.com/xml/Imagenes/rss-principal.png</url>
     <title>eBroom</title>
     <link>https://equipo4daw.miguelcarmona.com/</link>
   </image>
@@ -20,11 +20,6 @@
     <title>Principal</title>
     <link>https://equipo4daw.miguelcarmona.com/index.html</link>
     <description>Introducción a nuestra empresa, servicios y a qué nos dedicamos. </description>
-    <image>
-      <url>https://equipo4daw.miguelcarmona.com/xml/rss_media/principal.png</url>
-      <title>eBroom</title>
-      <link>https://equipo4daw.miguelcarmona.com/</link>
-    </image>
   </item>
   <item>
     <guid isPermaLink="true">https://equipo4daw.miguelcarmona.com/productos.html</guid>
