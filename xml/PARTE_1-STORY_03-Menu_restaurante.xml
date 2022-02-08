@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurante>
+
+  <menu categoria="Comida de los Montes">
+    <titulo lang="es">menu1</titulo>
+    <entrante>Consomé de ternera con reduccion de pasas</entrante>
+    <ingrediente>Ternera</ingrediente>
+    <ingrediente>Vino Pedro Ximenez</ingrediente>
+    <ingrediente>Pasas</ingrediente>
+    <principal>Capón Asado al tomillo</principal>
+    <ingrediente>Capón</ingrediente>
+    <ingrediente>Vino blanco</ingrediente>
+    <ingrediente>Zumo de naranja</ingrediente>
+    <postre>Café/Trufas de chocolate con avellana caramelizadas</postre>
+    <ingrediente>Trufas</ingrediente>
+    <ingrediente>Vainilla en pasta</ingrediente>
+    <ingrediente>Trocitos de avellanas caramelizadas</ingrediente>
+    <precio>12.50</precio>
+  </menu>
+
+<menu categoria="Comida Inglesa">
+    <titulo lang="es">menu2</titulo>
+    <entrante>Crema de esparragos blancos con nueces de pecán</entrante>
+    <ingrediente>Esparragos</ingrediente>
+    <ingrediente>Cebolla</ingrediente>
+    <ingrediente>Pecán</ingrediente>
+    <principal>Lomo de cerdo ibérico al Pedro Ximenez con patatas baby</principal>
+    <ingrediente>Lomo de Cerdo Ibérico</ingrediente>
+    <ingrediente>Vino Pedro Ximenez</ingrediente>
+    <ingrediente>Canela</ingrediente>
+    <postre>Café/Tarta de queso helado con arandanos</postre>
+    <ingrediente>Queso crema</ingrediente>
+    <ingrediente>Nata montada</ingrediente>
+    <ingrediente>Arandanos</ingrediente>
+    <precio>15.00</precio>
+  </menu>
+
+  <menu categoria="Comida Italiana">
+    <titulo lang="es">menu3</titulo>
+    <entrante>Sopa Minestrone</entrante>
+    <ingrediente>Alubias blancas</ingrediente>
+    <ingrediente>Queso parmesano</ingrediente>
+    <ingrediente>Pasta corta seca</ingrediente>
+    <principal>Carpaccio de solomillo con virutas de queso</principal>
+    <ingrediente>Solomillo de buey</ingrediente>
+    <ingrediente>Queso parmesano rallado</ingrediente>
+    <ingrediente>Pimienta</ingrediente>
+    <postre>Café/Crostata de peras y frambuesas</postre>
+    <ingrediente>Peras</ingrediente>
+    <ingrediente>Licor de Frangelico</ingrediente>
+    <ingrediente>Frambuesas</ingrediente>
+    <precio>15.00</precio>
+  </menu>
+
+  <menu categoria="Comida Francesa">
+    <titulo lang="es">menu4 </titulo>
+    <entrante>Sopa de cebolla francesa con queso gratinado</entrante>
+    <ingrediente>Cebolla</ingrediente>
+    <ingrediente>Brandy</ingrediente>
+    <ingrediente>Queso rallado gruyere</ingrediente>
+    <principal>Buey a la borgoña</principal>
+    <ingrediente>Buey</ingrediente>
+    <ingrediente>Vino tinto de Borgoña</ingrediente>
+    <ingrediente>Champiñones</ingrediente>
+    <postre>Café/Tarta Tatín de manzana</postre>
+    <ingrediente>Yemas de huevo</ingrediente>
+    <ingrediente>Leche</ingrediente>
+    <ingrediente>Manzana</ingrediente>
+    <precio>12.50</precio>
+  </menu>
+
+  <menu categoria="Infantil">
+    <titulo lang="es">menu5</titulo>
+    <entrante>Espaguetis con tomate y queso gratinado</entrante>
+    <ingrediente>Salsa de tomate natural</ingrediente>
+    <ingrediente>Espaguetis</ingrediente>
+    <ingrediente>Queso mozzarella rallado </ingrediente>
+    <principal>Hamburguesa/Huevo frito con patatas</principal>
+    <ingrediente>Carne molida de cuadril</ingrediente>
+    <ingrediente>Huevo frito</ingrediente>
+    <ingrediente>Patatas</ingrediente>
+    <postre>Helado de la carta/Mouse de chocolate</postre>
+    <ingrediente>Chocolate negro</ingrediente>
+    <ingrediente>Huevos</ingrediente>
+    <ingrediente>Nata líquida</ingrediente>
+    <precio>10.00</precio>
+  </menu>
+
+</restaurante>
