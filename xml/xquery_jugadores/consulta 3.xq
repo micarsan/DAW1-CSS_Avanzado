@@ -1,0 +1,1 @@
+/campeonato/equipo/jugador[sueldo>"1500 €"]

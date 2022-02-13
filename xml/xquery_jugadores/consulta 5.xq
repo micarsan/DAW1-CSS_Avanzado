@@ -1,0 +1,1 @@
+/campeonato/equipo/nombre | campeonato/equipo/posicion

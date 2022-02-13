@@ -1,0 +1,1 @@
+/campeonato/equipo/jugador/edad | campeonato/equipo/jugador/sueldo

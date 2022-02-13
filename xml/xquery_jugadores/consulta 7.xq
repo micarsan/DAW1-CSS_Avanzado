@@ -1,0 +1,1 @@
+/campeonato/equipo/jugador[edad>20]
