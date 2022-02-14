@@ -1,2 +1,2 @@
-for $x in doc("PARTE 1 - STORY 05 - Servicios.xml")/servicios/servicio/titulo
+for $x in doc("Servicios.xml")/servicios/servicio/titulo
 return $x
