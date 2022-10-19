@@ -97,7 +97,7 @@ footer p span {
 .left        { text-align: left;}
 .center      { text-align: center;}
 .right       { text-align: right;}
-.justify     { text-align: justify;}
+.justify     { text-align: left;}
 .mayusculas  { text-transform: uppercase;}
 .minusculas  { text-transform: lowercase;}
 .negrita     { font-weight: bold;}
